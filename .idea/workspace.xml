@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="adding a FX GUI: Building Landing 'GUI'">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" beforeDir="false" />
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/NotificationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/PromptInputView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientInfoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/LoginView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/RegisterView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/UpdateClientInfoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientInfo-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientList-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/login-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/notification-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/promptInput-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/register-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/updateClientInfo-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/esi-fit-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/landing-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,9 +78,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "C:/Users/sobfouodji/Documents/ProjectStruct/Repositories/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp",
+    "last_opened_file_path": "C:/Users/sobfouodji/Documents/ProjectStruct/Repositories/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp/utils"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\utils" />
+      <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\service" />
+      <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\model" />
+      <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\controller" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -196,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685545998339</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services">
+      <created>1685547618011</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685547618011</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +244,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="adding a FX GUI" />
     <MESSAGE value="adding a FX GUI: Building Landing 'GUI'" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a FX GUI: Building Landing 'GUI'" />
+    <MESSAGE value="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services" />
   </component>
 </project>
