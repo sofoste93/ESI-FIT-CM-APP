@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="tls.sofoste.esifitapp.ESIFITController">
+<VBox alignment="CENTER" prefHeight="502.0" prefWidth="596.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="tls.sofoste.esifitapp.ESIFITController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <Label alignment="CENTER" prefHeight="60.0" prefWidth="195.0" text="Hallo ESI">
+      <textFill>
+         <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923" radius="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.20807482302188873" green="0.7799999713897705" blue="0.015599999576807022" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+      <font>
+         <Font name="Consolas Bold" size="14.0" />
+      </font>
+   </Label>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Get Started" onAction="#onStartButtonClick"/>
+    <Label fx:id="welcomeText" alignment="CENTER" prefHeight="189.0" prefWidth="527.0" text="ESI-FIT CLIENT MANAGER">
+      <font>
+         <Font name="System Bold" size="37.0" />
+      </font>
+      <textFill>
+         <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923" radius="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill></Label>
+    <Button onAction="#onStartButtonClick" prefHeight="79.0" prefWidth="185.0" text="BEGINNEN">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
 </VBox>
