@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/NotificationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/PromptInputView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientInfoView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/LoginView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/RegisterView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/UpdateClientInfoView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientInfo-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientList-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/login-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/notification-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/promptInput-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/register-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/updateClientInfo-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="Views added">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c89a5491fbfda3fb050196d6a239f20200296e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685547618011</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Views added">
+      <created>1685548304475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685548304475</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +238,7 @@
     <MESSAGE value="adding a FX GUI" />
     <MESSAGE value="adding a FX GUI: Building Landing 'GUI'" />
     <MESSAGE value="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services" />
+    <MESSAGE value="Views added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Views added" />
   </component>
 </project>
