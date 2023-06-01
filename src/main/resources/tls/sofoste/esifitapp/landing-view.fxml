@@ -12,7 +12,7 @@
     </padding>
    <Label alignment="CENTER" prefHeight="60.0" prefWidth="195.0" text="Hallo ESI">
       <textFill>
-         <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923" radius="1.0">
+         <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
             <stops>
                <Stop>
                   <color>
@@ -37,7 +37,7 @@
          <Font name="System Bold" size="37.0" />
       </font>
       <textFill>
-         <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923" radius="1.0">
+         <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
             <stops>
                <Stop>
                   <color>

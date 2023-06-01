@@ -9,6 +9,6 @@ public class ESIFITController {
 
     @FXML
     protected void onStartButtonClick() {
-        welcomeText.setText("Hello! Welcome to ESI FITNESS CLIENT MANAGER App!");
+        welcomeText.setText("\tWelcome to ESI \nFITNESS CLIENT MANAGER");
     }
 }
