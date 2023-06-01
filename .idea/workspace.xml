@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="NotificationView&#10; &amp; PromptInputView with their .fxml&#10;  added!">
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="re-formatting code">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/landing-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/landing-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientList-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientList-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685549173255</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="re-formatting code">
+      <created>1685620783614</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685620783614</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +227,7 @@
     <MESSAGE value="Creating necessary classes:&#10;- controllers&#10;- models&#10;- utils&#10;- services" />
     <MESSAGE value="Views added" />
     <MESSAGE value="NotificationView&#10; &amp; PromptInputView with their .fxml&#10;  added!" />
-    <option name="LAST_COMMIT_MESSAGE" value="NotificationView&#10; &amp; PromptInputView with their .fxml&#10;  added!" />
+    <MESSAGE value="re-formatting code" />
+    <option name="LAST_COMMIT_MESSAGE" value="re-formatting code" />
   </component>
 </project>
