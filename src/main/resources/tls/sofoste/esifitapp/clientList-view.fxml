@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/20.0.1"
-      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:id="listWindowApp"
       fx:controller="tls.sofoste.esifitapp.view.ClientListView">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">

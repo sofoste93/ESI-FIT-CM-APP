@@ -1,14 +1,19 @@
 package tls.sofoste.esifitapp.view;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import tls.sofoste.esifitapp.ESIFITApp;
 
 import java.io.IOException;
 
 public class ClientListView extends Application {
+
+    @FXML
+    public VBox listWindowApp;
 
     @Override
     public void start(Stage stage) throws IOException {

@@ -6,13 +6,11 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="502.0" prefWidth="596.0" spacing="20.0"
-      xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
-      fx:controller="tls.sofoste.esifitapp.ESIFITController">
+<VBox fx:id="mainWindowApp" alignment="CENTER" prefHeight="502.0" prefWidth="596.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ESIFITController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Label alignment="CENTER" prefHeight="60.0" prefWidth="195.0" text="Hallo ESI">
+   <Label alignment="CENTER" prefHeight="60.0" prefWidth="195.0" text="HALLO, WILLKOMMEN!">
       <textFill>
          <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
             <stops>
@@ -34,7 +32,7 @@
       </font>
    </Label>
 
-    <Label fx:id="welcomeText" alignment="CENTER" prefHeight="189.0" prefWidth="527.0" text="ESI-FIT CLIENT MANAGER">
+    <Label fx:id="welcomeText" alignment="CENTER" prefHeight="189.0" prefWidth="527.0" text="E.S.I - FITNESS STUDIO">
       <font>
          <Font name="System Bold" size="37.0" />
       </font>
@@ -54,8 +52,18 @@
             </stops>
          </RadialGradient>
       </textFill></Label>
-    <Button onAction="#onStartButtonClick" prefHeight="79.0" prefWidth="185.0" text="BEGINNEN">
-      <font>
-         <Font name="System Bold" size="12.0" />
-      </font></Button>
+    <AnchorPane prefHeight="182.0" prefWidth="556.0">
+        <Button layoutX="323.0" layoutY="50.0" mnemonicParsing="false" onAction="#onExitBtnClick" prefHeight="79.0" prefWidth="185.0"
+                text="VERLASSEN">
+           <font>
+               <Font name="System Bold" size="12.0"/>
+           </font>
+        </Button>
+        <Button layoutX="56.0" layoutY="50.0" onAction="#onStartButtonClick" prefHeight="79.0" prefWidth="185.0"
+                text="BEGINNEN">
+          <font>
+              <Font name="System Bold" size="12.0"/>
+          </font>
+        </Button>
+    </AnchorPane>
 </VBox>

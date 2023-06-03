@@ -4,26 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="re-formatting code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="GUI added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ErrorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/MainView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/error-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/main-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientInfoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientInfoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ESIFITController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/ClientListView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/NotificationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/NotificationView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/PromptInputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/PromptInputView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/RegisterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/RegisterView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/UpdateClientInfoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/view/UpdateClientInfoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientInfo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientInfo-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientList-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/clientList-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/landing-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/landing-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/login-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/notification-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/notification-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/promptInput-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/promptInput-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/register-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/register-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/updateClientInfo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/updateClientInfo-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ESIFITApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ESIFITApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ESIFITController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ESIFITController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/clientInfo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/clientInfo-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/clientList-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/clientList-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/SessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/SessionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/landing-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/landing-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/login-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/notification-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/notification-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/promptInput-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/promptInput-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/register-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/register-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/ClientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/SessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/SessionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/updateClientInfo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/updateClientInfo-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/utils/IdGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/utils/IdGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/ClientInfoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/ClientInfoView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/ClientListView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/ClientListView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/NotificationView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/NotificationView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/PromptInputView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/PromptInputView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/RegisterView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/RegisterView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/UpdateClientInfoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/view/UpdateClientInfoView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +73,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5c4e0036-673c-4392-81ce-1453921a1d3f" />
+        <option name="url" value="https://github.com/sofoste93/ESI-FIT-CM-APP.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,8 +118,8 @@
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/sobfouodji/Documents/ProjectStruct/Repositories/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sobfouodji/Documents/ProjectStruct/Repositories/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp/utils&quot;,
+    &quot;last_directory_selection&quot;: &quot;F:/Project Files/Github/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Project Files/Github/tls/ESI-FIT-CM-APP/src/main/resources/tls/sofoste/esifitapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,19 +127,20 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.obiscr.chatgpt.settings.ChatGPT&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Project Files\Github\tls\ESI-FIT-CM-APP\src\main\resources\tls\sofoste\esifitapp" />
       <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\utils" />
       <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\service" />
       <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\model" />
       <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UpdateClientInfoView">
+  <component name="RunManager" selected="Application.ESIFITApp">
     <configuration name="ESIFITApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tls.sofoste.esifitapp.ESIFITApp" />
       <module name="ESI-FIT-APP" />
@@ -121,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tls.sofoste.esifitapp.view.LoginView" />
+    <configuration name="ErrorView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tls.sofoste.esifitapp.ErrorView" />
       <module name="ESI-FIT-APP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tls.sofoste.esifitapp.view.*" />
+          <option name="PATTERN" value="tls.sofoste.esifitapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,8 +167,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PromptInputView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tls.sofoste.esifitapp.view.PromptInputView" />
+    <configuration name="MainView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tls.sofoste.esifitapp.view.MainView" />
       <module name="ESI-FIT-APP" />
       <extension name="coverage">
         <pattern>
@@ -152,7 +185,7 @@
       <module name="ESI-FIT-APP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tls.sofoste.esifitapp.view.*" />
+          <option name="PATTERN" value="tls.sofoste.esifitapp.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,7 +198,7 @@
       <module name="ESI-FIT-APP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tls.sofoste.esifitapp.view.*" />
+          <option name="PATTERN" value="tls.sofoste.esifitapp.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ESIFITApp" />
+        <item itemvalue="Application.MainView" />
+        <item itemvalue="Application.ErrorView" />
         <item itemvalue="Application.UpdateClientInfoView" />
         <item itemvalue="Application.RegisterView" />
-        <item itemvalue="Application.PromptInputView" />
-        <item itemvalue="Application.LoginView" />
-        <item itemvalue="Application.ESIFITApp" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +225,11 @@
       <option name="presentableId" value="Default" />
       <updated>1685534308536</updated>
       <workItem from="1685645933323" duration="2145000" />
-      <workItem from="1685775781953" duration="11387000" />
+      <workItem from="1685775781953" duration="12669000" />
+      <workItem from="1685797555380" duration="554000" />
+      <workItem from="1685798953587" duration="4170000" />
+      <workItem from="1685803203444" duration="156000" />
+      <workItem from="1685803373072" duration="8487000" />
     </task>
     <task id="LOCAL-00001" summary="adding a FX GUI">
       <created>1685539264664</created>
@@ -243,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685620783614</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="GUI added">
+      <created>1685796382562</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685796382562</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +312,7 @@
     <MESSAGE value="Views added" />
     <MESSAGE value="NotificationView&#10; &amp; PromptInputView with their .fxml&#10;  added!" />
     <MESSAGE value="re-formatting code" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-formatting code" />
+    <MESSAGE value="GUI added" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI added" />
   </component>
 </project>

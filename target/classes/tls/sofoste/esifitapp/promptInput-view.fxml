@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="tls.sofoste.esifitapp.view.PromptInputView"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.view.PromptInputView">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="Export Session File" />
+            <MenuItem mnemonicParsing="false" text="Export Client File" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Register new client" />
+            <MenuItem mnemonicParsing="false" text="Delete a client" />
+            <MenuItem mnemonicParsing="false" text="Update Session" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="View">
+            <MenuItem mnemonicParsing="false" text="View single client" />
+            <MenuItem mnemonicParsing="false" text="View all clients" />
+            <MenuItem mnemonicParsing="false" text="View statistics" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About ESI-FIT App" />
+        </Menu>
+    </MenuBar>
+    <AnchorPane prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="493.0" layoutY="486.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="204.0" text="EXIT" textFill="#790b03">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="16.0" layoutY="486.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="204.0" text="HOME" textFill="#1612f8">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="197.0" layoutY="24.0" prefHeight="34.0" prefWidth="319.0" text="ENTER THE CLIENT-ID">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <ListView layoutX="16.0" layoutY="77.0" prefHeight="366.0" prefWidth="681.0" />
+        <Label alignment="CENTER" layoutX="292.0" layoutY="106.0" prefHeight="34.0" prefWidth="129.0" text="ENTER CLIENT-ID">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField alignment="CENTER" layoutX="208.0" layoutY="156.0" prefHeight="104.0" prefWidth="298.0" promptText="123MaMu">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </TextField>
+        <Button layoutX="258.0" layoutY="486.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="204.0" text="CLIENT LIST" textFill="#1612f8">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </AnchorPane>
+</VBox>

@@ -6,13 +6,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class ESIFITApp extends Application {
+public class ErrorView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("landing-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 505);
+        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("error-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 620, 420);
         stage.setResizable(false);
-        stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - - - ] M A I N - P A G E");
+        stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - - - ] ERROR VIEW");
         stage.setScene(scene);
         stage.show();
     }

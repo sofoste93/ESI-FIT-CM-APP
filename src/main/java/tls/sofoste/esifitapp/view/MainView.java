@@ -1,18 +1,20 @@
-package tls.sofoste.esifitapp;
+package tls.sofoste.esifitapp.view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import tls.sofoste.esifitapp.ESIFITApp;
+
 import java.io.IOException;
 
-public class ESIFITApp extends Application {
+public class MainView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("landing-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 505);
         stage.setResizable(false);
-        stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - - - ] M A I N - P A G E");
+        stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - - - ] STARTSEITE");
         stage.setScene(scene);
         stage.show();
     }
