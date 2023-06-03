@@ -12,7 +12,7 @@ public class MainView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 505);
+        Scene scene = new Scene(fxmlLoader.load(), 800, 675);
         stage.setResizable(false);
         stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - - - ] STARTSEITE");
         stage.setScene(scene);

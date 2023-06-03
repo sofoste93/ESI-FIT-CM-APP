@@ -11,7 +11,7 @@ import java.io.IOException;
 public class PromptInputView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("promptInput-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("client_info_prompt-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 720, 640);
         stage.setTitle("ESI-FITNESS CLIENT MANAGER [ --- ] CLIENT INFORMATION");
         stage.setScene(scene);
@@ -20,5 +20,4 @@ public class PromptInputView extends Application {
     public static void main(String[] args) {
         launch();
     }
-
 }
