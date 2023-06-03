@@ -1,102 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.text.Font?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/20.0.1"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="tls.sofoste.esifitapp.view.RegisterView">
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.view.RegisterView">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="Export Session File"/>
-            <MenuItem mnemonicParsing="false" text="Export Client File"/>
-            <MenuItem mnemonicParsing="false" text="Preferences…"/>
-            <SeparatorMenuItem mnemonicParsing="false"/>
-            <MenuItem mnemonicParsing="false" text="Quit"/>
+            <MenuItem mnemonicParsing="false" text="Export Session File" />
+            <MenuItem mnemonicParsing="false" text="Export Client File" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
-            <MenuItem mnemonicParsing="false" text="Register new client"/>
-            <MenuItem mnemonicParsing="false" text="Delete a client"/>
-            <MenuItem mnemonicParsing="false" text="Update Session"/>
+            <MenuItem mnemonicParsing="false" text="Register new client" />
+            <MenuItem mnemonicParsing="false" text="Delete a client" />
+            <MenuItem mnemonicParsing="false" text="Update Session" />
         </Menu>
         <Menu mnemonicParsing="false" text="View">
-            <MenuItem mnemonicParsing="false" text="View single client"/>
-            <MenuItem mnemonicParsing="false" text="View all clients"/>
-            <MenuItem mnemonicParsing="false" text="View statistics"/>
+            <MenuItem mnemonicParsing="false" text="View single client" />
+            <MenuItem mnemonicParsing="false" text="View all clients" />
+            <MenuItem mnemonicParsing="false" text="View statistics" />
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About ESI-FIT App"/>
+            <MenuItem mnemonicParsing="false" text="About ESI-FIT App" />
         </Menu>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;"
-               text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f"
-               wrapText="false">
+    <AnchorPane prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
+        <Button layoutX="493.0" layoutY="486.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="204.0" text="EXIT" textFill="#790b03">
             <font>
-                <Font size="18.0"/>
-            </font>
-        </Label>
-        <Button layoutX="493.0" layoutY="486.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="204.0"
-                text="EXIT" textFill="#790b03">
-            <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <Button layoutX="16.0" layoutY="486.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="204.0"
-                text="HOME" textFill="#1612f8">
+        <Button layoutX="16.0" layoutY="486.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="204.0" text="HOME" textFill="#1612f8">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <Label alignment="CENTER" layoutX="197.0" layoutY="24.0" prefHeight="34.0" prefWidth="319.0"
-               text="REGISTER A NEW CLIENT">
+        <Label alignment="CENTER" layoutX="197.0" layoutY="24.0" prefHeight="34.0" prefWidth="319.0" text="REGISTER A NEW CLIENT">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <ListView layoutX="16.0" layoutY="77.0" prefHeight="366.0" prefWidth="681.0"/>
-        <Label alignment="CENTER" layoutX="137.0" layoutY="85.0" prefHeight="61.0" prefWidth="446.0"
-               text="NOTE: CLIENT-ID WILL BE AUTO-GENERATED AFTER REGISTRATION" textFill="#099bf5">
+        <ListView layoutX="16.0" layoutY="77.0" prefHeight="366.0" prefWidth="681.0" />
+        <Label alignment="CENTER" layoutX="137.0" layoutY="85.0" prefHeight="61.0" prefWidth="446.0" text="NOTE: CLIENT-ID WILL BE AUTO-GENERATED AFTER REGISTRATION" textFill="#099bf5">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <TextField alignment="CENTER" layoutX="272.0" layoutY="158.0" prefHeight="61.0" prefWidth="269.0"
-                   promptText="Tom">
+        <TextField alignment="CENTER" layoutX="272.0" layoutY="158.0" prefHeight="61.0" prefWidth="269.0" promptText="Tom">
             <font>
-                <Font name="System Bold" size="24.0"/>
+                <Font name="System Bold" size="24.0" />
             </font>
         </TextField>
-        <Button layoutX="258.0" layoutY="486.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="204.0"
-                text="CLIENT LIST" textFill="#1612f8">
+        <Button layoutX="258.0" layoutY="486.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="204.0" text="CLIENT LIST" textFill="#1612f8">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <TextField alignment="CENTER" layoutX="272.0" layoutY="237.0" prefHeight="61.0" prefWidth="269.0"
-                   promptText="Cat">
+        <TextField alignment="CENTER" layoutX="272.0" layoutY="237.0" prefHeight="61.0" prefWidth="269.0" promptText="Cat">
             <font>
-                <Font name="System Bold" size="24.0"/>
+                <Font name="System Bold" size="24.0" />
             </font>
         </TextField>
         <Label layoutX="100.0" layoutY="156.0" prefHeight="61.0" prefWidth="158.0" text="ENTER FIRSTNAME:">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Label>
         <Label layoutX="100.0" layoutY="237.0" prefHeight="61.0" prefWidth="158.0" text="ENTER LASTNAME:">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Label>
         <Label layoutX="100.0" layoutY="328.0" prefHeight="61.0" prefWidth="158.0" text="CLIENT-ID:">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <TextField alignment="CENTER" layoutX="272.0" layoutY="328.0" prefHeight="61.0" prefWidth="269.0"
-                   promptText="123ToCa">
+        <TextField alignment="CENTER" layoutX="272.0" layoutY="328.0" prefHeight="61.0" prefWidth="269.0" promptText="123ToCa">
             <font>
-                <Font name="System Bold" size="24.0"/>
+                <Font name="System Bold" size="24.0" />
             </font>
         </TextField>
     </AnchorPane>

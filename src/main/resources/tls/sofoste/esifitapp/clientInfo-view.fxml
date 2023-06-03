@@ -10,6 +10,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+
 <VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/20.0.1"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="tls.sofoste.esifitapp.view.ClientInfoView">
