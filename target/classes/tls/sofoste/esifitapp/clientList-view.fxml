@@ -5,7 +5,7 @@
 <?import javafx.scene.text.*?>
 
 <VBox fx:id="listWindowApp" prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.view.ClientListController">
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ClientListController">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">
             <MenuItem mnemonicParsing="false" text="Export Session File" />
@@ -41,12 +41,12 @@
                 <TableColumn fx:id="lastNameColumn" prefWidth="267.0" text="Nachname" />
             </columns>
         </TableView>
-      <Button layoutX="39.0" layoutY="501.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="190.0" text="HAUPTMENU">
+      <Button layoutX="39.0" layoutY="501.0" onAction="#onMenuBtnClick" mnemonicParsing="false" prefHeight="71.0" prefWidth="190.0" text="HAUPTMENU">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="494.0" layoutY="501.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="190.0" text="VERLASSEN">
+      <Button layoutX="494.0" layoutY="501.0" onAction="#onExitBtnClick" mnemonicParsing="false" prefHeight="71.0" prefWidth="190.0" text="VERLASSEN">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

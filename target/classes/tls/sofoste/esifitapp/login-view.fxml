@@ -55,7 +55,22 @@
             </font>
         </TextField>
         <Text fx:id="actionStatus" layoutX="284.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.0" />
-        <Button layoutX="274.0" layoutY="479.0" mnemonicParsing="false" onAction="#loginClient" prefHeight="61.0" prefWidth="172.0" text="ANMELDEN" textFill="#046133">
+        <Button layoutX="316.0" layoutY="344.0" mnemonicParsing="false" onAction="#loginClient" prefHeight="61.0" prefWidth="172.0" text="ANMELDEN" textFill="#046133">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="481.0" layoutY="476.0" mnemonicParsing="false" onAction="#switchToRegisterWindow" prefHeight="61.0" prefWidth="172.0" text="REGISTRIEREN" textFill="#046133">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="272.0" layoutY="476.0" mnemonicParsing="false" onAction="#showClientList" prefHeight="61.0" prefWidth="172.0" text="KUNDENLISTE" textFill="#046133">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="67.0" layoutY="476.0" mnemonicParsing="false" onAction="#switchToMainWindow" prefHeight="61.0" prefWidth="172.0" text="HAUPTMENU" textFill="#046133">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

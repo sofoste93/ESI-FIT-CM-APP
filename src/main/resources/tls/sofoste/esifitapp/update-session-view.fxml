@@ -33,7 +33,7 @@
                 <Font size="18.0" />
             </font>
         </Label>
-        <Button layoutX="18.0" layoutY="484.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="204.0" text="HAUPTMENU" textFill="#654d06">
+        <Button layoutX="18.0" layoutY="484.0" onAction="#switchToMainWindow" mnemonicParsing="false" prefHeight="69.0" prefWidth="204.0" text="HAUPTMENU" textFill="#654d06">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
@@ -44,7 +44,7 @@
             </font>
         </Label>
         <ListView layoutX="18.0" layoutY="87.0" prefHeight="366.0" prefWidth="688.0" />
-        <Button layoutX="501.0" layoutY="484.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="204.0" text="SPEICHERN" textFill="#064a11">
+        <Button layoutX="501.0" layoutY="484.0" onAction="#handleUpdateSession" mnemonicParsing="false" prefHeight="69.0" prefWidth="204.0" text="SPEICHERN" textFill="#064a11">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
@@ -63,7 +63,7 @@
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <TextField alignment="CENTER" layoutX="399.0" layoutY="26.0" prefHeight="34.0" prefWidth="204.0" promptText="123MAMU" />
+      <TextField alignment="CENTER" fx:id="clientIdField" layoutX="399.0" layoutY="26.0" prefHeight="34.0" prefWidth="204.0" promptText="123MAMU" />
       <Label layoutX="401.0" layoutY="249.0" prefHeight="34.0" prefWidth="103.0" text="STARTZEIT:">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -74,10 +74,10 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <TextField accessibleRole="DATE_PICKER" alignment="CENTER" layoutX="538.0" layoutY="249.0" prefHeight="34.0" prefWidth="146.0" promptText="HH:MM" />
-      <TextField accessibleRole="DATE_PICKER" alignment="CENTER" layoutX="538.0" layoutY="299.0" prefHeight="34.0" prefWidth="146.0" promptText="HH:MM" />
-      <DatePicker layoutX="204.0" layoutY="249.0" prefHeight="34.0" prefWidth="175.0" />
-      <DatePicker layoutX="204.0" layoutY="299.0" prefHeight="34.0" prefWidth="175.0" />
+      <TextField accessibleRole="DATE_PICKER" fx:id="startTimeField" alignment="CENTER" layoutX="538.0" layoutY="249.0" prefHeight="34.0" prefWidth="146.0" promptText="HH:MM" />
+      <TextField accessibleRole="DATE_PICKER" fx:id="endTimeField" alignment="CENTER" layoutX="538.0" layoutY="299.0" prefHeight="34.0" prefWidth="146.0" promptText="HH:MM" />
+      <DatePicker layoutX="204.0" fx:id="startDatePicker" layoutY="249.0" prefHeight="34.0" prefWidth="175.0" promptText="22.05.2023" />
+      <DatePicker layoutX="204.0" fx:id="endDatePicker" layoutY="299.0" prefHeight="34.0" prefWidth="175.0" promptText="22.05.2023" />
       <Label alignment="CENTER" fx:id="actionStatus" layoutX="39.0" layoutY="376.0" prefHeight="52.0" prefWidth="645.0" text="." textFill="#076f6f">
          <font>
             <Font size="20.0" />

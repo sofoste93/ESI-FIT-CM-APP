@@ -14,7 +14,7 @@ public class RegisterView extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("register-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 720, 640);
         stage.setResizable(false);
-        stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - - - ] REGISTER");
+        stage.setTitle("ESI-FITNESS CLIENT MANAGER");
         stage.setScene(scene);
         stage.show();
     }

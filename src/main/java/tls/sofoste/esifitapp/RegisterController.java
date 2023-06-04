@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -28,7 +29,7 @@ public class RegisterController {
     private TextField lastNameField;
 
     @FXML
-    private Text actionStatus;
+    private Label actionStatus;
 
     private ClientController clientController = new ClientController();
 
@@ -62,7 +63,6 @@ public class RegisterController {
             }
         }
     }
-    @FXML
     public void showClientList(ActionEvent event) {
         try {
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("clientList-view.fxml")));
@@ -70,7 +70,6 @@ public class RegisterController {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
-
         } catch (IOException e) {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
         }
