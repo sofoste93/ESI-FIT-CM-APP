@@ -47,15 +47,21 @@ public class SessionService {
         saveSessionData();
     }
 
-    public void updateSession(String clientId, LocalDateTime startTime, LocalDateTime endTime) {
+    public boolean updateSession(String clientId, LocalDateTime startTime, LocalDateTime endTime) {
         List<Session> sessions = clientSessions.get(clientId);
-        if (sessions != null && !sessions.isEmpty()) {
-            Session lastSession = sessions.get(sessions.size() - 1);
-            lastSession.setLoginTime(startTime);
-            lastSession.setLogoutTime(endTime);
-
-            saveSessionData();
+        if (sessions == null || sessions.isEmpty()) {
+            // No sessions found for the given client ID.
+            return false;
         }
+
+        Session lastSession = sessions.get(sessions.size() - 1);
+        lastSession.setLoginTime(startTime);
+        lastSession.setLogoutTime(endTime);
+
+        saveSessionData();
+
+        // Session update was successful.
+        return true;
     }
 
     // Auto-save session data to file
@@ -74,7 +80,16 @@ public class SessionService {
 
     // Load session data from file
     private void loadSessionData() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("sessions.txt"))) {
+        File file = new File("sessions.txt");
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return;
+            }
+        }
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\\|");

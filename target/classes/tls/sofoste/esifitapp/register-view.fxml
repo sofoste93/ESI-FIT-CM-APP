@@ -56,7 +56,7 @@
                 <Font name="System Bold" size="24.0" />
             </font>
         </TextField>
-        <Button layoutX="258.0" layoutY="486.0" mnemonicParsing="false" onAction="#registerNewClient" prefHeight="61.0" prefWidth="204.0" text="SPREICHERN" textFill="#0d5402">
+        <Button layoutX="258.0" layoutY="486.0" mnemonicParsing="false" onAction="#registerClient" prefHeight="61.0" prefWidth="204.0" text="SPREICHERN" textFill="#0d5402">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>

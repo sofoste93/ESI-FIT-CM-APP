@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ClientSessionsController">
+    <TextField fx:id="clientIdField" layoutX="321.0" layoutY="104.0" prefHeight="60.0" prefWidth="160.0" />
+    <Text fx:id="actionStatus" fill="#0c5a9e" layoutX="129.0" layoutY="67.0" text="." textAlignment="CENTER" wrappingWidth="543.0">
+      <font>
+         <Font size="30.0" />
+      </font></Text>
+    <Button layoutX="512.0" layoutY="104.0" onAction="#displayClientSessions" prefHeight="60.0" prefWidth="160.0" text="SITZUNG ANZEIGEN">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+    <TableView fx:id="tableView" layoutX="129.0" layoutY="181.0" prefHeight="397.0" prefWidth="543.0">
+        <columns>
+         <TableColumn prefWidth="135.0" text="KUNDEN-ID" />
+            <TableColumn fx:id="logoutTimeColumn" minWidth="0.0" prefWidth="219.0" text="ABMELDUNGSZEIT" />
+            <TableColumn fx:id="loginTimeColumn" prefWidth="188.0" text="ANMELDUNGSZEIT" />
+        </columns>
+    </TableView>
+   <Label alignment="CENTER" layoutX="129.0" layoutY="104.0" prefHeight="60.0" prefWidth="160.0" text="KUNDEN-ID:">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

@@ -10,7 +10,7 @@ import java.io.IOException;
 public class ClientInfoView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("clientInfo-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("client-info-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 720, 620);
         stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - ] CLIENT INFORMATION");
         stage.setScene(scene);

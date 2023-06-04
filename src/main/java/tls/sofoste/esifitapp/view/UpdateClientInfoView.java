@@ -11,7 +11,7 @@ import java.io.IOException;
 public class UpdateClientInfoView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("updateClientInfo-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("update-session-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 720, 620);
         stage.setResizable(false);
         stage.setTitle("ESI-FITNESS CLIENT MANAGER [- - -] UPDATE DATA");

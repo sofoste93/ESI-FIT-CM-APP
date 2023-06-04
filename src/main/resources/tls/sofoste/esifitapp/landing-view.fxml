@@ -6,11 +6,11 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:id="mainWindowApp" alignment="CENTER" prefHeight="502.0" prefWidth="596.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ESIFITController">
+<VBox fx:id="mainWindowApp" alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ESIFITController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Label alignment="CENTER" prefHeight="60.0" prefWidth="195.0" text="HALLO, WILLKOMMEN!">
+   <Label alignment="CENTER" prefHeight="60.0" prefWidth="401.0" text="HALLO, WILLKOMMEN!">
       <textFill>
          <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
             <stops>
@@ -53,17 +53,23 @@
          </RadialGradient>
       </textFill></Label>
     <AnchorPane prefHeight="182.0" prefWidth="556.0">
-        <Button layoutX="323.0" layoutY="50.0" mnemonicParsing="false" onAction="#onExitBtnClick" prefHeight="79.0" prefWidth="185.0"
-                text="VERLASSEN">
+        <Button layoutX="574.0" layoutY="50.0" mnemonicParsing="false" onAction="#onExitBtnClick" prefHeight="79.0" prefWidth="126.0" text="VERLASSEN">
            <font>
-               <Font name="System Bold" size="12.0"/>
+               <Font name="System Bold" size="12.0" />
            </font>
         </Button>
-        <Button layoutX="56.0" layoutY="50.0" onAction="#onStartButtonClick" prefHeight="79.0" prefWidth="185.0"
-                text="BEGINNEN">
+        <Button layoutX="56.0" layoutY="50.0" onAction="#onStartButtonClick" prefHeight="79.0" prefWidth="126.0" text="HAUPTMENU">
           <font>
-              <Font name="System Bold" size="12.0"/>
+              <Font name="System Bold" size="12.0" />
           </font>
         </Button>
+        <Button layoutX="227.0" layoutY="50.0" onAction="#registerClient" prefHeight="79.0" prefWidth="126.0" text="REGISTRIEREN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button layoutX="399.0" layoutY="50.0" onAction="#login" prefHeight="73.0" prefWidth="126.0" text="EINLOGGEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
     </AnchorPane>
 </VBox>

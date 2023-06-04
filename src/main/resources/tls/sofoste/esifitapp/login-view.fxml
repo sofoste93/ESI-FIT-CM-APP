@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.view.LoginView">
+<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.LoginController">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">
             <MenuItem mnemonicParsing="false" text="Export Session File" />
@@ -33,41 +33,32 @@
                 <Font size="18.0" />
             </font>
         </Label>
-        <Button layoutX="493.0" layoutY="486.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="204.0" text="VERLASSEN" textFill="#790b03">
-            <font>
-                <Font name="System Bold" size="12.0" />
-            </font>
-        </Button>
-        <Button layoutX="16.0" layoutY="486.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="204.0" text="HAUPTMENU" textFill="#1612f8">
-            <font>
-                <Font name="System Bold" size="12.0" />
-            </font>
-        </Button>
         <Label alignment="CENTER" layoutX="197.0" layoutY="24.0" prefHeight="34.0" prefWidth="319.0" text="KUNDEN EINLOGGEN">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
         <ListView layoutX="16.0" layoutY="77.0" prefHeight="366.0" prefWidth="681.0" />
-        <Label alignment="CENTER" layoutX="175.0" layoutY="144.0" prefHeight="61.0" prefWidth="413.0" text="EINEN KUNDEN ANMELDEN, UM DIE SITZUNG ZU STARTEN" textFill="#099bf5">
+        <Label alignment="CENTER" layoutX="150.0" layoutY="147.0" prefHeight="61.0" prefWidth="413.0" text="EINEN KUNDEN ANMELDEN, UM DIE SITZUNG ZU STARTEN" textFill="#099bf5">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <Button layoutX="258.0" layoutY="486.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="204.0" text="KUNDENLISTE" textFill="#1612f8">
-            <font>
-                <Font name="System Bold" size="12.0" />
-            </font>
-        </Button>
-        <Label alignment="CENTER" layoutX="208.0" layoutY="237.0" prefHeight="61.0" prefWidth="95.0" text="KUNDEN-ID">
+        <Label alignment="CENTER" layoutX="175.0" layoutY="237.0" prefHeight="61.0" prefWidth="95.0" text="KUNDEN-ID">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <TextField alignment="CENTER" layoutX="317.0" layoutY="237.0" prefHeight="61.0" prefWidth="236.0" promptText="123ToCa">
+        <TextField fx:id="clientIdField" alignment="CENTER" layoutX="284.0" layoutY="237.0" prefHeight="61.0" prefWidth="236.0" promptText="123ToCa">
             <font>
                 <Font name="System Bold" size="24.0" />
             </font>
         </TextField>
+        <Text fx:id="actionStatus" layoutX="284.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.0" />
+        <Button layoutX="274.0" layoutY="479.0" mnemonicParsing="false" onAction="#loginClient" prefHeight="61.0" prefWidth="172.0" text="ANMELDEN" textFill="#046133">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
     </AnchorPane>
 </VBox>

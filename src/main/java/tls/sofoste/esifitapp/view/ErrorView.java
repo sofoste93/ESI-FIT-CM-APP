@@ -1,9 +1,11 @@
-package tls.sofoste.esifitapp;
+package tls.sofoste.esifitapp.view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import tls.sofoste.esifitapp.ESIFITApp;
+
 import java.io.IOException;
 
 public class ErrorView extends Application {

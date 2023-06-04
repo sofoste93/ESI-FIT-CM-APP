@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.LogoutController">
+    <Button layoutX="221.0" layoutY="281.0" onAction="#logoutClient" prefHeight="69.0" prefWidth="236.0" text="ABMELDEN" textFill="#4d0606">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+   <Label fx:id="actionStatus" alignment="CENTER" layoutX="142.0" layoutY="46.0" prefHeight="69.0" prefWidth="394.0" text="EINEN KUNDEN ABMELDEN" textFill="#048069">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+    <Label alignment="CENTER" layoutX="115.0" layoutY="170.0" prefHeight="61.0" prefWidth="95.0" text="KUNDEN-ID">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <TextField fx:id="clientIdField" alignment="CENTER" layoutX="221.0" layoutY="170.0" prefHeight="61.0" prefWidth="236.0" promptText="123ToCa">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </TextField>
+
+</AnchorPane>

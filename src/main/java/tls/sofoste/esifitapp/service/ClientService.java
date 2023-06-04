@@ -20,9 +20,7 @@ public class ClientService {
         String id = IdGenerator.generateId() + firstName.substring(0, 2);
         Client newClient = new Client(id, firstName, lastName);
         clients.put(id, newClient);
-
         saveClientData();
-
         return newClient;
     }
 
@@ -32,7 +30,6 @@ public class ClientService {
 
     public void deleteClient(String id) {
         clients.remove(id);
-
         saveClientData();
     }
 
@@ -52,9 +49,19 @@ public class ClientService {
         }
     }
 
-    // Load client data from file
+// Load client data from file
     private void loadClientData() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("clients.txt"))) {
+        File file = new File("clients.txt");
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return;
+            }
+        }
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\\|");
@@ -68,4 +75,5 @@ public class ClientService {
             e.printStackTrace();
         }
     }
+
 }

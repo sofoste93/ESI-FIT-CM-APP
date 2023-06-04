@@ -14,16 +14,24 @@ public class SessionController {
         return sessionService.startSession(clientId);
     }
 
-    public void endSession(String clientId) {
+    public Session endSession(String clientId) {
         sessionService.endSession(clientId);
+        return null;
     }
+
 
     public List<Session> getClientSessions(String clientId) {
         return sessionService.getClientSessions(clientId);
     }
 
-    public void updateSession(String clientId, String startTime, String endTime) {
-        sessionService.updateSession(clientId, LocalDateTime.parse(startTime, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")), LocalDateTime.parse(endTime, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")));
+    public boolean updateSession(String clientId, String startTime, String endTime) {
+        try {
+            boolean updateSuccessful = sessionService.updateSession(clientId, LocalDateTime.parse(startTime,
+                    DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")), LocalDateTime.parse(endTime, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")));
+            return updateSuccessful;
+        } catch (Exception e) {
+            return false;
+        }
     }
     public void deleteClientSessions(String clientId) {
         sessionService.deleteClientSessions(clientId);

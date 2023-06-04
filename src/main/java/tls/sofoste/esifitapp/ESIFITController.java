@@ -36,4 +36,28 @@ public class ESIFITController {
         Stage stage = (Stage) mainWindowApp.getScene().getWindow();
         stage.close();
     }
+    public void registerClient(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("register-view.fxml")));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
+    public void login(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("login-view.fxml")));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
 }
