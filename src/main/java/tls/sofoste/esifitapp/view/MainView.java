@@ -14,7 +14,7 @@ public class MainView extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 800, 675);
         stage.setResizable(false);
-        stage.setTitle("ESI-FITNESS CLIENT MANAGER [ - - - ] STARTSEITE");
+        stage.setTitle("ESI-FITNESS CLIENT MANAGER");
         stage.setScene(scene);
         stage.show();
     }

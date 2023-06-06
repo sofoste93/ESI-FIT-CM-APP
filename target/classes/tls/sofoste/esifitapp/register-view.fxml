@@ -74,15 +74,5 @@
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <Label layoutX="93.0" layoutY="328.0" prefHeight="61.0" prefWidth="158.0" text="CLIENT-ID:">
-            <font>
-                <Font name="System Bold" size="12.0" />
-            </font>
-        </Label>
-        <TextField alignment="CENTER" layoutX="272.0" layoutY="328.0" prefHeight="61.0" prefWidth="269.0" promptText="123ToCa">
-            <font>
-                <Font name="System Bold" size="24.0" />
-            </font>
-        </TextField>
     </AnchorPane>
 </VBox>

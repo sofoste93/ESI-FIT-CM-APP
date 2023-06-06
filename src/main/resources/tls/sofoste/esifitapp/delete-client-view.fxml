@@ -4,19 +4,33 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.DeleteClientController">
+<AnchorPane fx:id="mainWindowApp" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.DeleteClientController">
 
-    <TextField fx:id="clientIdField" layoutX="226.0" layoutY="25.0" prefHeight="64.0" prefWidth="204.0" />
-    <Button layoutX="226.0" layoutY="247.0" onAction="#handleDeleteClient" prefHeight="89.0" prefWidth="204.0" text="KUNDEN LÖSCHEN" textFill="#a82407">
+    <TextField fx:id="clientIdField" alignment="CENTER" layoutX="203.0" layoutY="29.0" prefHeight="64.0" prefWidth="222.0" promptText="1234IdTo" />
+    <Button layoutX="445.0" layoutY="29.0" onAction="#handleDeleteClient" prefHeight="64.0" prefWidth="132.0" text="KUNDEN LÖSCHEN" textFill="#a82407">
       <font>
          <Font name="System Bold" size="12.0" />
       </font></Button>
-   <Label alignment="CENTER" layoutX="45.0" layoutY="29.0" prefHeight="64.0" prefWidth="149.0" text="KUNDEN-ID">
+   <Label alignment="CENTER" layoutX="18.0" layoutY="29.0" prefHeight="64.0" prefWidth="149.0" text="KUNDEN-ID EINGEBEN:">
       <font>
          <Font name="System Bold" size="12.0" />
       </font>
    </Label>
-   <Label alignment="CENTER" fx:id="actionStatus" layoutX="55.0" layoutY="143.0" prefHeight="64.0" prefWidth="487.0" />
+   <Label fx:id="actionStatus" alignment="CENTER" layoutX="55.0" layoutY="143.0" prefHeight="64.0" prefWidth="487.0" />
+   <Button layoutX="242.0" layoutY="273.0" onAction="#showClientList" prefHeight="64.0" prefWidth="132.0" text="KUNDENLISTE" textFill="#034638">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button layoutX="444.0" layoutY="273.0" onAction="#onExitBtnClick" prefHeight="64.0" prefWidth="132.0" text="VERLASSEN" textFill="#a82407">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button layoutX="36.0" layoutY="273.0" onAction="#switchToMainWindow" prefHeight="64.0" prefWidth="132.0" text="HAUPTMENU" textFill="#043332">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
 
 </AnchorPane>

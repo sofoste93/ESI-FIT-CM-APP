@@ -32,6 +32,7 @@ public class MainController {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
         }
     }
+
     @FXML
     public void switchToLoginWindow(ActionEvent event) {
         try {
@@ -45,6 +46,7 @@ public class MainController {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
         }
     }
+
     @FXML
     public void onExitBtnClick() {
         Stage stage = (Stage) mainWindowApp.getScene().getWindow();
@@ -107,11 +109,29 @@ public class MainController {
 
     @FXML
     public void deleteBtn(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("delete-client-view.fxml")));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
 
+        } catch (IOException e) {
+            Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
+        }
     }
 
     @FXML
     public void logoutBtn(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("logout-view.fxml")));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
 
+        } catch (IOException e) {
+            Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
+        }
     }
 }

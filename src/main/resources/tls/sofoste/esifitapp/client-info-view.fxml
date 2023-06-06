@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+<VBox fx:id="mainWindowApp" prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ClientInfoController">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">
@@ -12,7 +12,7 @@
             <MenuItem mnemonicParsing="false" text="Export Client File" />
             <MenuItem mnemonicParsing="false" text="Preferences…" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
+            <MenuItem onAction="#onExitBtnClick" mnemonicParsing="false" text="Quit" />
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
             <MenuItem mnemonicParsing="false" text="Register new client" />
@@ -29,12 +29,12 @@
         </Menu>
     </MenuBar>
     <AnchorPane prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
-        <Button layoutX="568.0" layoutY="486.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="129.0" text="VERLASSEN" textFill="#790b03">
+        <Button onAction="#onExitBtnClick" layoutX="568.0" layoutY="486.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="129.0" text="VERLASSEN" textFill="#790b03">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <Button layoutX="16.0" layoutY="486.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="129.0" text="HAUPTMENU" textFill="#16161b">
+        <Button layoutX="16.0" layoutY="486.0" onAction="#switchToMainWindow" mnemonicParsing="false" prefHeight="67.0" prefWidth="129.0" text="HAUPTMENU" textFill="#16161b">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
