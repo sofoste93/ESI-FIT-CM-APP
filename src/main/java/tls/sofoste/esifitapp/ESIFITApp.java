@@ -12,7 +12,8 @@ public class ESIFITApp extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ESIFITApp.class.getResource("landing-view.fxml"));
         stage.setResizable(false);
-        stage.setTitle("ESI-FITNESS CLIENT MANAGER");
+        stage.setTitle("ESI-FITNESS CLIENT MANAGER     \t\t\tPowered by Enrico, Stephane & Islam TLS");
+        stage.setFullScreen(true);
         Label label = new Label("Welcome to ESI-Fit Client Manager!");
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setScene(scene);

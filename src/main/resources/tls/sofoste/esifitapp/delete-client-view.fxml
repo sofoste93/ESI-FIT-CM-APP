@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -16,7 +17,10 @@
          <Font name="System Bold" size="12.0" />
       </font>
    </Label>
-   <Label fx:id="actionStatus" alignment="CENTER" layoutX="55.0" layoutY="143.0" prefHeight="64.0" prefWidth="487.0" />
+   <Label fx:id="actionStatus" alignment="CENTER" layoutX="20.0" layoutY="143.0" prefHeight="64.0" prefWidth="558.0" textFill="#a94412">
+      <font>
+         <Font name="Consolas Bold" size="18.0" />
+      </font></Label>
    <Button layoutX="242.0" layoutY="273.0" onAction="#showClientList" prefHeight="64.0" prefWidth="132.0" text="KUNDENLISTE" textFill="#034638">
       <font>
          <Font name="System Bold" size="12.0" />
@@ -32,5 +36,10 @@
          <Font name="System Bold" size="12.0" />
       </font>
    </Button>
+   <ProgressBar layoutX="36.0" layoutY="360.0" prefHeight="18.0" prefWidth="541.0">
+      <effect>
+         <ColorAdjust brightness="0.72" contrast="0.23" hue="-1.0" saturation="0.04" />
+      </effect>
+   </ProgressBar>
 
 </AnchorPane>

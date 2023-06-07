@@ -4,42 +4,34 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.LoginController">
+<VBox fx:id="mainWindowApp" prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.LoginController">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="Export Session File" />
-            <MenuItem mnemonicParsing="false" text="Export Client File" />
+            <MenuItem mnemonicParsing="false" text="Save session" />
+            <MenuItem mnemonicParsing="false" text="Save list" />
             <MenuItem mnemonicParsing="false" text="Preferences…" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
+            <MenuItem mnemonicParsing="false" onAction="#onExitBtnClick" text="Quit" />
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
-            <MenuItem mnemonicParsing="false" text="Register new client" />
-            <MenuItem mnemonicParsing="false" text="Delete a client" />
             <MenuItem mnemonicParsing="false" text="Update Session" />
         </Menu>
         <Menu mnemonicParsing="false" text="View">
-            <MenuItem mnemonicParsing="false" text="View single client" />
             <MenuItem mnemonicParsing="false" text="View all clients" />
             <MenuItem mnemonicParsing="false" text="View statistics" />
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About ESI-FIT App" />
+            <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About ESI-FIT App" onAction="#handleAboutMenuItem"/>
         </Menu>
     </MenuBar>
     <AnchorPane prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f">
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Label>
-        <Label alignment="CENTER" layoutX="197.0" layoutY="24.0" prefHeight="34.0" prefWidth="319.0" text="KUNDEN EINLOGGEN">
+        <Label fx:id="actionStatus" alignment="CENTER" layoutX="27.0" layoutY="26.0" prefHeight="34.0" prefWidth="654.0" text="KUNDEN EINLOGGEN" textFill="#916c06">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
         <ListView layoutX="16.0" layoutY="77.0" prefHeight="366.0" prefWidth="681.0" />
-        <Label alignment="CENTER" layoutX="150.0" layoutY="147.0" prefHeight="61.0" prefWidth="413.0" text="EINEN KUNDEN ANMELDEN, UM DIE SITZUNG ZU STARTEN" textFill="#099bf5">
+        <Label alignment="CENTER" layoutX="135.0" layoutY="149.0" prefHeight="62.0" prefWidth="449.0" text="EINEN KUNDEN ANMELDEN, UM DIE SITZUNG ZU STARTEN" textFill="#099bf5">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
@@ -54,7 +46,6 @@
                 <Font name="System Bold" size="24.0" />
             </font>
         </TextField>
-        <Text fx:id="actionStatus" layoutX="284.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.0" />
         <Button layoutX="316.0" layoutY="344.0" mnemonicParsing="false" onAction="#loginClient" prefHeight="61.0" prefWidth="172.0" text="ANMELDEN" textFill="#046133">
          <font>
             <Font name="System Bold" size="12.0" />

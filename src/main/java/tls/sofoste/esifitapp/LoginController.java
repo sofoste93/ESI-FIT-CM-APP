@@ -6,24 +6,31 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import tls.sofoste.esifitapp.controller.ClientController;
 import tls.sofoste.esifitapp.controller.SessionController;
 import tls.sofoste.esifitapp.model.Session;
 
 import java.io.IOException;
+import java.net.URI;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.awt.Desktop;
 
 public class LoginController {
     @FXML
-    private TextField clientIdField;
-
+    public MenuItem aboutMenuItem;
     @FXML
-    private Text actionStatus;
+    private TextField clientIdField;
+    @FXML
+    private Label actionStatus;
+    @FXML
+    public VBox mainWindowApp;
 
     private ClientController clientController = new ClientController();
     private SessionController sessionController = new SessionController();
@@ -32,18 +39,19 @@ public class LoginController {
         String clientId = clientIdField.getText().trim();
 
         if (clientId.isEmpty()) {
-            actionStatus.setText("Please enter client ID!");
+            actionStatus.setText("Bitte Kunden-Id eingeben!".toUpperCase());
         } else {
             if (clientController.getClient(clientId) != null) {
                 Session newSession = sessionController.startSession(clientId);
                 if (newSession != null) {
-                    actionStatus.setText("Session started for client with ID: " + clientId);
+                    actionStatus.setText(("Sitzung für den Kunden mit ID: " + clientId + " gestartet!").toUpperCase());
                     clientIdField.clear();
                 } else {
-                    actionStatus.setText("Failed to start session!");
+                    actionStatus.setText(("Sitzung konnte nicht gestartet werden!".toUpperCase()).toUpperCase());
                 }
             } else {
-                actionStatus.setText("Client with ID: " + clientId + " does not exist. Please register first.");
+                actionStatus.setText(("Kunden mit ID: " + clientId + " nicht gefunden. " +
+                        "Bitte registrieren oder ID prüfen.").toUpperCase());
             }
         }
     }
@@ -53,6 +61,7 @@ public class LoginController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
         } catch (IOException e) {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
@@ -65,6 +74,7 @@ public class LoginController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
@@ -78,10 +88,29 @@ public class LoginController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
         }
+    }
+
+    @FXML
+    public void onExitBtnClick() {
+        Stage stage = (Stage) mainWindowApp.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    public void handleAboutMenuItem(ActionEvent actionEvent) {
+            try {
+                if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                    URI uri = new URI("https://github.com/sofoste93/ESI-FIT-CM-APP");
+                    Desktop.getDesktop().browse(uri);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
     }
 }

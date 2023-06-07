@@ -4,48 +4,45 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:id="mainWindowApp" prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+<VBox fx:id="mainWindowApp" prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ClientInfoController">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="Export Session File" />
-            <MenuItem mnemonicParsing="false" text="Export Client File" />
+            <MenuItem mnemonicParsing="false" text="Save session" />
+            <MenuItem mnemonicParsing="false" text="Save list" />
             <MenuItem mnemonicParsing="false" text="Preferences…" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem onAction="#onExitBtnClick" mnemonicParsing="false" text="Quit" />
+            <MenuItem mnemonicParsing="false" onAction="#onExitBtnClick" text="Quit" />
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
-            <MenuItem mnemonicParsing="false" text="Register new client" />
-            <MenuItem mnemonicParsing="false" text="Delete a client" />
             <MenuItem mnemonicParsing="false" text="Update Session" />
         </Menu>
         <Menu mnemonicParsing="false" text="View">
-            <MenuItem mnemonicParsing="false" text="View single client" />
             <MenuItem mnemonicParsing="false" text="View all clients" />
             <MenuItem mnemonicParsing="false" text="View statistics" />
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About ESI-FIT App" />
+            <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#handleAboutMenuItem" text="About ESI-FIT App" />
         </Menu>
     </MenuBar>
     <AnchorPane prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
-        <Button onAction="#onExitBtnClick" layoutX="568.0" layoutY="486.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="129.0" text="VERLASSEN" textFill="#790b03">
+        <Button layoutX="568.0" layoutY="486.0" mnemonicParsing="false" onAction="#onExitBtnClick" prefHeight="67.0" prefWidth="129.0" text="VERLASSEN" textFill="#790b03">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <Button layoutX="16.0" layoutY="486.0" onAction="#switchToMainWindow" mnemonicParsing="false" prefHeight="67.0" prefWidth="129.0" text="HAUPTMENU" textFill="#16161b">
+        <Button layoutX="16.0" layoutY="486.0" mnemonicParsing="false" onAction="#switchToMainWindow" prefHeight="67.0" prefWidth="129.0" text="HAUPTMENU" textFill="#020223">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <Label alignment="CENTER" layoutX="145.0" layoutY="24.0" prefHeight="34.0" prefWidth="129.0" text="Kunden-Id:">
+        <Label alignment="CENTER" layoutX="43.0" layoutY="14.0" prefHeight="54.0" prefWidth="203.0" text="KUNDEN-ID EINGEBEN:">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
         <ListView layoutX="16.0" layoutY="77.0" prefHeight="366.0" prefWidth="681.0" />
-        <Button layoutX="237.0" layoutY="486.0" mnemonicParsing="false" onAction="#displayClientInformation" prefHeight="67.0" prefWidth="247.0" text="INFO ANZEIGEN" textFill="#018001">
+        <Button layoutX="504.0" layoutY="14.0" mnemonicParsing="false" onAction="#displayClientInformation" prefHeight="54.0" prefWidth="193.0" text="INFO ANZEIGEN" textFill="#018001">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
@@ -62,13 +59,18 @@
         <Label fx:id="clientIdText" alignment="CENTER" layoutX="435.0" layoutY="113.0" prefHeight="34.0" prefWidth="129.0" text=" " />
         <Text fx:id="actionStatus" fill="#678302" layoutX="116.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="488.0">
          <font>
-            <Font name="System Bold" size="40.0" />
+            <Font name="Consolas Bold" size="22.0" />
          </font>
         </Text>
-      <TextField fx:id="clientIdField" alignment="CENTER" layoutX="312.0" layoutY="24.0" prefHeight="34.0" prefWidth="383.0" promptText="ID eingeben">
+      <TextField fx:id="clientIdField" alignment="CENTER" layoutX="248.0" layoutY="14.0" prefHeight="54.0" prefWidth="247.0" promptText="ID eingeben">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
+      <Button layoutX="183.0" layoutY="486.0" mnemonicParsing="false" onAction="#updateClientSession" prefHeight="67.0" prefWidth="129.0" text="SITZUNG ÄNDERN" textFill="#6e4c09">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
     </AnchorPane>
 </VBox>

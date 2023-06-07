@@ -24,6 +24,7 @@ public class ESIFITController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
@@ -42,6 +43,7 @@ public class ESIFITController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
@@ -54,6 +56,7 @@ public class ESIFITController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {

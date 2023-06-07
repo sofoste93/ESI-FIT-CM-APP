@@ -8,12 +8,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import tls.sofoste.esifitapp.controller.SessionController;
 
+import java.awt.*;
 import java.io.IOException;
+import java.net.URI;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -23,6 +27,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class UpdateSessionController {
+    @FXML
+    public VBox mainWindowApp;
+    @FXML
+    public MenuItem aboutMenuItem;
 
     @FXML
     private TextField clientIdField;
@@ -84,6 +92,23 @@ public class UpdateSessionController {
 
         } catch (IOException e) {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
+    @FXML
+    public void onExitBtnClick() {
+        Stage stage = (Stage) mainWindowApp.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    public void handleAboutMenuItem(ActionEvent actionEvent) {
+        try {
+            if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                URI uri = new URI("https://github.com/sofoste93/ESI-FIT-CM-APP");
+                Desktop.getDesktop().browse(uri);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

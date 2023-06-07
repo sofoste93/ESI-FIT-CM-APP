@@ -1,78 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:id="mainWindowApp" prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.RegisterController">
-    <MenuBar VBox.vgrow="NEVER">
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.RegisterController">
+    <VBox fx:id="mainWindowApp" alignment="CENTER" prefHeight="620.0" prefWidth="720.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="Export Session File" />
-            <MenuItem mnemonicParsing="false" text="Export Client File" />
+            <MenuItem mnemonicParsing="false" text="Save session" />
+            <MenuItem mnemonicParsing="false" text="Save list" />
             <MenuItem mnemonicParsing="false" text="Preferences…" />
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" onAction="#onExitBtnClick" text="Quit" />
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
-            <MenuItem mnemonicParsing="false" text="Register new client" />
-            <MenuItem mnemonicParsing="false" text="Delete a client" />
-            <MenuItem mnemonicParsing="false" text="Sitzung anpassen" />
+            <MenuItem mnemonicParsing="false" text="Update Session" />
         </Menu>
         <Menu mnemonicParsing="false" text="View">
-            <MenuItem mnemonicParsing="false" text="Kunden Info anzeigen" />
-            <MenuItem mnemonicParsing="false" text="Kunden-Liste anzeigen" />
+            <MenuItem mnemonicParsing="false" text="View all clients" />
             <MenuItem mnemonicParsing="false" text="View statistics" />
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About ESI-FIT App" />
+            <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#handleAboutMenuItem" text="About ESI-FIT App" />
         </Menu>
     </MenuBar>
-    <AnchorPane prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
+        <AnchorPane VBox.vgrow="ALWAYS">
+        <AnchorPane prefHeight="395.0" prefWidth="643.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
         <Button layoutX="493.0" layoutY="486.0" mnemonicParsing="false" onAction="#onExitBtnClick" prefHeight="61.0" prefWidth="204.0" text="VERLASSEN" textFill="#790b03">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="Consolas Bold" size="12.0" />
             </font>
         </Button>
         <Button layoutX="16.0" layoutY="486.0" mnemonicParsing="false" onAction="#switchToMainWindow" prefHeight="61.0" prefWidth="204.0" text="HAUPTMENU" textFill="#1e1c8d">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="Consolas Bold" size="12.0" />
             </font>
         </Button>
-        <Label alignment="CENTER" fx:id="actionStatus" layoutX="15.0" layoutY="13.0" prefHeight="52.0" prefWidth="681.0" text="KUNDEN REGISTRIEREN">
+        <Label fx:id="actionStatus" alignment="CENTER" layoutX="15.0" layoutY="13.0" prefHeight="52.0" prefWidth="681.0" text="EINEN KUNDEN REGISTRIEREN">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="Consolas Bold" size="12.0" />
             </font>
         </Label>
         <ListView layoutX="16.0" layoutY="77.0" prefHeight="366.0" prefWidth="681.0" />
         <Label alignment="CENTER" layoutX="81.0" layoutY="86.0" prefHeight="61.0" prefWidth="573.0" text="HINWEIS: DIE KUNDENNUMMER WIRD NACH DER REGISTRIERUNG AUTOMATISCH GENERIERT." textFill="#034e79">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="Consolas Bold" size="12.0" />
             </font>
         </Label>
-        <TextField fx:id="firstNameField" alignment="CENTER" layoutX="272.0" layoutY="158.0" prefHeight="61.0" prefWidth="269.0" promptText="Tom">
+        <TextField fx:id="firstNameField" alignment="CENTER" layoutX="272.0" layoutY="158.0" prefHeight="62.0" prefWidth="370.0" promptText="Tom">
             <font>
-                <Font name="System Bold" size="24.0" />
+                <Font name="Consolas Bold" size="22.0" />
             </font>
         </TextField>
         <Button layoutX="258.0" layoutY="486.0" mnemonicParsing="false" onAction="#registerClient" prefHeight="61.0" prefWidth="204.0" text="SPREICHERN" textFill="#0d5402">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="Consolas Bold" size="12.0" />
             </font>
         </Button>
-        <TextField fx:id="lastNameField" alignment="CENTER" layoutX="272.0" layoutY="237.0" prefHeight="61.0" prefWidth="269.0" promptText="Cat">
+        <TextField fx:id="lastNameField" alignment="CENTER" layoutX="272.0" layoutY="237.0" prefHeight="62.0" prefWidth="370.0" promptText="Cat">
             <font>
-                <Font name="System Bold" size="24.0" />
+                <Font name="Consolas Bold" size="22.0" />
             </font>
         </TextField>
-        <Label layoutX="93.0" layoutY="158.0" prefHeight="61.0" prefWidth="158.0" text="ENTER FIRSTNAME:">
+        <Label layoutX="93.0" layoutY="158.0" prefHeight="61.0" prefWidth="158.0" text="VORNAME EINGEBEN:">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="Consolas Bold" size="12.0" />
             </font>
         </Label>
-        <Label layoutX="93.0" layoutY="237.0" prefHeight="61.0" prefWidth="158.0" text="ENTER LASTNAME:">
+        <Label layoutX="93.0" layoutY="237.0" prefHeight="61.0" prefWidth="158.0" text="NACHNAME EINGEBEN:">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="Consolas Bold" size="12.0" />
             </font>
         </Label>
-    </AnchorPane>
-</VBox>
+        <Label fx:id="generatedId" alignment="CENTER" layoutX="274.0" layoutY="341.0" prefHeight="62.0" prefWidth="370.0">
+            <font>
+                <Font name="Consolas Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="93.0" layoutY="341.0" prefHeight="61.0" prefWidth="158.0" text="KUNDEN-ID:">
+            <font>
+                <Font name="Consolas Bold" size="12.0" />
+            </font>
+        </Label>
+        <ProgressBar layoutX="86.0" layoutY="410.0" prefHeight="18.0" prefWidth="541.0">
+            <effect>
+                <ColorAdjust brightness="0.72" contrast="1.0" hue="-0.14" saturation="-0.03" />
+            </effect>
+        </ProgressBar>
+        </AnchorPane>
+        </AnchorPane>
+    </VBox>
+</AnchorPane>

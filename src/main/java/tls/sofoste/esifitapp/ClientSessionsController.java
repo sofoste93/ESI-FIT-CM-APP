@@ -13,15 +13,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import tls.sofoste.esifitapp.controller.SessionController;
-import tls.sofoste.esifitapp.model.Client;
 import tls.sofoste.esifitapp.model.Session;
-
+import javafx.scene.control.TableCell;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Objects;
 import java.util.logging.Level;
@@ -42,27 +41,55 @@ public class ClientSessionsController {
     @FXML
     private TableColumn<Session, LocalDateTime> logoutTimeColumn;
     @FXML
-    private TableColumn <Client, String> clientIdTableColumn;
+    private TableColumn <Session, String> clientIdTableColumn;
 
     private SessionController sessionController = new SessionController();
+
 
     public void displayClientSessions(ActionEvent event) {
         String clientId = clientIdField.getText().trim();
 
         if (clientId.isEmpty()) {
-            actionStatus.setText("Please enter client ID!");
+            actionStatus.setText("Bitte Kunden-ID eingeben!".toUpperCase());
         } else {
             List<Session> sessions = sessionController.getClientSessions(clientId);
             if (sessions != null && !sessions.isEmpty()) {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
                 ObservableList<Session> sessionObservableList = FXCollections.observableArrayList(sessions);
                 tableView.setItems(sessionObservableList);
+
                 clientIdTableColumn.setCellValueFactory(new PropertyValueFactory<>("clientId"));
                 loginTimeColumn.setCellValueFactory(new PropertyValueFactory<>("loginTime"));
                 logoutTimeColumn.setCellValueFactory(new PropertyValueFactory<>("logoutTime"));
-                actionStatus.setText("Client sessions displayed successfully.");
+
+                loginTimeColumn.setCellFactory(column -> new TableCell<Session, LocalDateTime>() {
+                    @Override
+                    protected void updateItem(LocalDateTime date, boolean empty) {
+                        super.updateItem(date, empty);
+                        if (empty) {
+                            setText(null);
+                        } else {
+                            setText(date.format(formatter));
+                        }
+                    }
+                });
+
+                logoutTimeColumn.setCellFactory(column -> new TableCell<Session, LocalDateTime>() {
+                    @Override
+                    protected void updateItem(LocalDateTime date, boolean empty) {
+                        super.updateItem(date, empty);
+                        if (empty) {
+                            setText(null);
+                        } else {
+                            setText(date.format(formatter));
+                        }
+                    }
+                });
+
+                actionStatus.setText("Sitzung angezeigt!".toUpperCase());
                 clientIdField.clear();
             } else {
-                actionStatus.setText("No sessions found for client with ID: " + clientId);
+                actionStatus.setText(("Keine Sitzung gefunden für den Kunden mit ID: " + clientId).toUpperCase());
             }
         }
     }
@@ -73,6 +100,7 @@ public class ClientSessionsController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
@@ -85,6 +113,7 @@ public class ClientSessionsController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
+            stage.setFullScreen(true);
             stage.show();
         } catch (IOException e) {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);

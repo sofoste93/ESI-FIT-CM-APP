@@ -6,6 +6,7 @@ module tls.sofoste.esifitapp {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires java.logging;
+    requires java.desktop;
 
     opens tls.sofoste.esifitapp to javafx.fxml;
     exports tls.sofoste.esifitapp;
