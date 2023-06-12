@@ -13,6 +13,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import tls.sofoste.esifitapp.controller.SessionController;
@@ -100,7 +101,6 @@ public class ClientSessionsController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
-            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
@@ -113,7 +113,6 @@ public class ClientSessionsController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
-            stage.setFullScreen(true);
             stage.show();
         } catch (IOException e) {
             Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);

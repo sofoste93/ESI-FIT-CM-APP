@@ -54,17 +54,21 @@ public class UpdateSessionController {
 
     public void handleUpdateSession(ActionEvent event) {
         String clientId = clientIdField.getText().trim();
+        String startTimeString = startTimeField.getText().trim();
+        String endTimeString = endTimeField.getText().trim();
 
         if (clientId.isEmpty()) {
-            actionStatus.setText("Please enter client ID!");
+            actionStatus.setText("Bitte Kunden-ID eingeben!");
+        } else if (startTimeString.isEmpty() || endTimeString.isEmpty()) {
+            actionStatus.setText("Bitte Start- und Endzeit ausfüllen!");
         } else {
             LocalDate startDate = startDatePicker.getValue();
             LocalDate endDate = endDatePicker.getValue();
-            LocalTime startTime = LocalTime.parse(startTimeField.getText().trim());
-            LocalTime endTime = LocalTime.parse(endTimeField.getText().trim());
+            LocalTime startTime = LocalTime.parse(startTimeString);
+            LocalTime endTime = LocalTime.parse(endTimeString);
 
-            if (startDate == null || endDate == null || startTime == null || endTime == null) {
-                actionStatus.setText("Please select both start and end dates and times!");
+            if (startDate == null || endDate == null) {
+                actionStatus.setText("Bitte alle Felder füllen!");
             } else {
                 LocalDateTime startDateTime = LocalDateTime.of(startDate, startTime);
                 LocalDateTime endDateTime = LocalDateTime.of(endDate, endTime);
@@ -73,14 +77,15 @@ public class UpdateSessionController {
                 String formattedEndDateTime = endDateTime.format(formatter);
                 boolean updateSuccessful = sessionController.updateSession(clientId, formattedStartDateTime, formattedEndDateTime);
                 if (updateSuccessful) {
-                    actionStatus.setText("Session updated successfully for client with ID: " + clientId);
+                    actionStatus.setText("Neue Sitzung für Kunden mit ID: " + clientId + " gespeichert.");
                     clientIdField.clear();
                 } else {
-                    actionStatus.setText("Failed to update session!");
+                    actionStatus.setText("Die Operation konnte nicht abgeschlossen werden!");
                 }
             }
         }
     }
+
     @FXML
     public void switchToMainWindow(ActionEvent event) {
         try {

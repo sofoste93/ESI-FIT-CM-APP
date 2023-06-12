@@ -55,7 +55,7 @@ public class ClientInfoController {
         List<Session> sessions = sessionController.getClientSessions(clientId);
 
         if (clientId.isEmpty()) {
-            actionStatus.setText("Please enter client ID!");
+            actionStatus.setText("Bitte Kunden-ID eingeben!");
         } else {
             Client client = clientController.getClient(clientId);
             if (client != null) {
@@ -69,10 +69,10 @@ public class ClientInfoController {
                     clientSessionStart.setText(loginTime);
                     clientSessionEnd.setText(logoutTime);
                 }
-                actionStatus.setText("Client information displayed successfully.");
+                actionStatus.setText("Kunden-Info angezeigt.");
                 clientIdField.clear();
             } else {
-                actionStatus.setText("Client with ID: " + clientId + " does not exist. Please register first.");
+                actionStatus.setText("Keinen Kunden mit ID: " + clientId + " gefunden.");
             }
         }
     }

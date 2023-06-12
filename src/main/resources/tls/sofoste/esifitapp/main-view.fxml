@@ -34,7 +34,7 @@
       </font>
    </Label>
    <AnchorPane prefHeight="492.0" prefWidth="758.0">
-   
+
       <Label layoutX="20.0" layoutY="14.0" prefHeight="35.0" prefWidth="208.0" text="KUNDEN REGISTRIEREN">
          <font>
             <Font name="System Bold" size="14.0" />
