@@ -10,8 +10,6 @@ module tls.sofoste.esifitapp {
 
     opens tls.sofoste.esifitapp to javafx.fxml;
     exports tls.sofoste.esifitapp;
-    exports tls.sofoste.esifitapp.view;
-    opens tls.sofoste.esifitapp.view to javafx.fxml;
     exports tls.sofoste.esifitapp.controller;
     opens tls.sofoste.esifitapp.controller to javafx.fxml;
     opens tls.sofoste.esifitapp.model to javafx.base;
