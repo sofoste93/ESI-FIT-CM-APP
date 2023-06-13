@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="Code clean up: resizing windows">
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/UpdateSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/UpdateSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/controller/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/model/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/model/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/service/SessionService.java" afterDir="false" />
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="Code clean up">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/SessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/SessionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/ClientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/SessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/SessionService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +154,7 @@
       <workItem from="1685803373072" duration="19953000" />
       <workItem from="1685823582966" duration="669000" />
       <workItem from="1685884620790" duration="25195000" />
-      <workItem from="1685948845769" duration="29196000" />
+      <workItem from="1685948845769" duration="34153000" />
     </task>
     <task id="LOCAL-00001" summary="adding a FX GUI">
       <created>1685539264664</created>
@@ -286,7 +289,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686642596604</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Code clean up">
+      <created>1686642960259</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686642960259</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Code clean up">
+      <created>1686642984054</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686642984054</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,9 +332,9 @@
     <MESSAGE value="GUI updated - linked" />
     <MESSAGE value="GUIs Linked to the backend ;-)" />
     <MESSAGE value="Error handling and GUI updated / delete GUI updated" />
-    <MESSAGE value="Code clean up" />
     <MESSAGE value="Code clean up: unused parameters removed, clientController &amp; sessionController made final" />
     <MESSAGE value="Code clean up: resizing windows" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code clean up: resizing windows" />
+    <MESSAGE value="Code clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code clean up" />
   </component>
 </project>

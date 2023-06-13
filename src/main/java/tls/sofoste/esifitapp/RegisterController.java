@@ -55,41 +55,17 @@ public class RegisterController {
         String lastName = lastNameField.getText().trim();
 
         if (firstName.isEmpty() || lastName.isEmpty()) {
-            actionStatus.setText("Please fill in all fields!");
+            actionStatus.setText("Bitte alle Felder ausfüllen!");
         } else {
             Client newClient = clientController.registerClient(firstName, lastName);
             if (newClient != null) {
-                actionStatus.setText("Client registered with ID: " + newClient.getId());
+                actionStatus.setText("Kunden registriert mit ID: " + newClient.getId());
                 firstNameField.clear();
                 lastNameField.clear();
                 generatedId.setText(newClient.getId());
             } else {
-                actionStatus.setText("Registration failed!");
+                actionStatus.setText("Registrierung konnte nicht ausgeführt werden!");
             }
-        }
-    }
-    @FXML
-    public void showClientInfo(ActionEvent event) {
-        try {
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("client-info-view.fxml")));
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-
-        } catch (IOException e) {
-            Logger.getLogger(ESIFITController.class.getName()).log(Level.SEVERE, null, e);
-        }
-    }
-    @FXML
-    public void handleAboutMenuItem(ActionEvent actionEvent) {
-        try {
-            if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-                URI uri = new URI("https://github.com/sofoste93/ESI-FIT-CM-APP");
-                Desktop.getDesktop().browse(uri);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
