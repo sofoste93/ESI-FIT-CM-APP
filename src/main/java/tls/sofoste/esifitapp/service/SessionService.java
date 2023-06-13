@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 public class SessionService {
-    private Map<String, List<Session>> clientSessions = new HashMap<>();
+    private final Map<String, List<Session>> clientSessions = new HashMap<>();
 
     public SessionService() {
         loadSessionData();

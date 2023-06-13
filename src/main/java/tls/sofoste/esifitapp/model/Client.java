@@ -11,7 +11,6 @@ public class Client {
         this.lastName = lastName;
     }
 
-    // getters and setters here
 
     public String getId() {
         return id;

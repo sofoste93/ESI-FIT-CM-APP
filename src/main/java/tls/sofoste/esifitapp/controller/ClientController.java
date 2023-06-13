@@ -6,7 +6,7 @@ import tls.sofoste.esifitapp.service.ClientService;
 import java.util.List;
 
 public class ClientController {
-    private ClientService clientService = new ClientService();
+    private final ClientService clientService = new ClientService();
 
     public Client registerClient(String firstName, String lastName) {
         return clientService.registerClient(firstName, lastName);

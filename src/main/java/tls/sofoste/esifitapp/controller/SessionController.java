@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class SessionController {
-    private SessionService sessionService = new SessionService();
+    private final SessionService sessionService = new SessionService();
 
     public Session startSession(String clientId) {
         return sessionService.startSession(clientId);

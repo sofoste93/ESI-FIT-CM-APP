@@ -49,7 +49,7 @@ public class UpdateSessionController {
     @FXML
     private Label actionStatus;
 
-    private SessionController sessionController = new SessionController();
+    private final SessionController sessionController = new SessionController();
 
     public void handleUpdateSession(ActionEvent event) {
         String clientId = clientIdField.getText().trim();

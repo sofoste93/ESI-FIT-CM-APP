@@ -13,8 +13,6 @@ public class Session {
         this.logoutTime = logoutTime;
     }
 
-    // getters and setters here
-
     public String getClientId() {
         return clientId;
     }
