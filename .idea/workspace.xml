@@ -8,12 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clients.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sessions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sessions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ClientSessionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ClientSessionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/LogoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/controller/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/service/SessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/SessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/SessionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ClientInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ClientInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/UpdateSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/UpdateSessionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,29 +76,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "F:/Project Files/Github/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp",
-    "last_opened_file_path": "A:/MyRepositories/ESI-FIT-CLIENT-MANAGER",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;F:/Project Files/Github/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;A:/MyRepositories/ESI-FIT-CLIENT-MANAGER&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Project Files\Github\tls\ESI-FIT-CM-APP\src\main\resources\tls\sofoste\esifitapp" />

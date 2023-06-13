@@ -52,28 +52,37 @@ public class ClientInfoController {
 
     public void displayClientInformation() {
         String clientId = clientIdField.getText().trim();
-        List<Session> sessions = sessionController.getClientSessions(clientId);
 
         if (clientId.isEmpty()) {
             actionStatus.setText("Bitte Kunden-ID eingeben!");
-        } else {
-            Client client = clientController.getClient(clientId);
-            if (client != null) {
-                clientIdText.setText(client.getId());
-                clientFirstNameText.setText(client.getFirstName());
-                clientLastNameText.setText(client.getLastName());
+            return;
+        }
+
+        Client client = clientController.getClient(clientId);
+        if (client != null) {
+            clientIdText.setText(client.getId());
+            clientFirstNameText.setText(client.getFirstName());
+            clientLastNameText.setText(client.getLastName());
+
+            List<Session> sessions = sessionController.getClientSessions(clientId);
+
+            if (sessions != null && !sessions.isEmpty()) {
+                Session lastSession = sessions.get(sessions.size() - 1);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
-                for (Session session : sessions) {
-                    String loginTime = (session.getLoginTime() != null) ? session.getLoginTime().format(formatter) : "N/A";
-                    String logoutTime = (session.getLogoutTime() != null) ? session.getLogoutTime().format(formatter) : "N/A";
-                    clientSessionStart.setText(loginTime);
-                    clientSessionEnd.setText(logoutTime);
-                }
+
+                String loginTime = (lastSession.getLoginTime() != null) ? lastSession.getLoginTime().format(formatter) : "N/A";
+                String logoutTime = (lastSession.getLogoutTime() != null) ? lastSession.getLogoutTime().format(formatter) : "N/A";
+
+                clientSessionStart.setText(loginTime);
+                clientSessionEnd.setText(logoutTime);
                 actionStatus.setText("Kunden-Info angezeigt.");
-                clientIdField.clear();
             } else {
-                actionStatus.setText("Keinen Kunden mit ID: " + clientId + " gefunden.");
+                actionStatus.setText("Keine Sitzungen für den Kunden mit der ID: " + clientId + " gefunden.");
             }
+
+            clientIdField.clear();
+        } else {
+            actionStatus.setText("Keinen Kunden mit ID: " + clientId + " gefunden.");
         }
     }
 

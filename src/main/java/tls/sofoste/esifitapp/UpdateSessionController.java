@@ -55,35 +55,52 @@ public class UpdateSessionController {
         String clientId = clientIdField.getText().trim();
         String startTimeString = startTimeField.getText().trim();
         String endTimeString = endTimeField.getText().trim();
+        LocalDate startDate = startDatePicker.getValue();
+        LocalDate endDate = endDatePicker.getValue();
 
+        // Data validation: to prevent wrong time format input
         if (clientId.isEmpty()) {
             actionStatus.setText("Bitte Kunden-ID eingeben!");
+            return;
         } else if (startTimeString.isEmpty() || endTimeString.isEmpty()) {
             actionStatus.setText("Bitte Start- und Endzeit ausfüllen!");
-        } else {
-            LocalDate startDate = startDatePicker.getValue();
-            LocalDate endDate = endDatePicker.getValue();
-            LocalTime startTime = LocalTime.parse(startTimeString);
-            LocalTime endTime = LocalTime.parse(endTimeString);
+            return;
+        } else if (startDate == null || endDate == null) {
+            actionStatus.setText("Bitte alle Felder füllen!");
+            return;
+        } else if (isTimeValid(startTimeString) || isTimeValid(endTimeString)) {
+            actionStatus.setText("Bitte geben Sie eine gültige Start- und Endzeit ein!");
+            return;
+        }
 
-            if (startDate == null || endDate == null) {
-                actionStatus.setText("Bitte alle Felder füllen!");
-            } else {
-                LocalDateTime startDateTime = LocalDateTime.of(startDate, startTime);
-                LocalDateTime endDateTime = LocalDateTime.of(endDate, endTime);
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
-                String formattedStartDateTime = startDateTime.format(formatter);
-                String formattedEndDateTime = endDateTime.format(formatter);
-                boolean updateSuccessful = sessionController.updateSession(clientId, formattedStartDateTime, formattedEndDateTime);
-                if (updateSuccessful) {
-                    actionStatus.setText("Neue Sitzung für Kunden mit ID: " + clientId + " gespeichert.");
-                    clientIdField.clear();
-                } else {
-                    actionStatus.setText("Die Operation konnte nicht abgeschlossen werden!");
-                }
-            }
+        // Parsing the dates and times
+        LocalTime startTime = LocalTime.parse(startTimeString);
+        LocalTime endTime = LocalTime.parse(endTimeString);
+
+        // Constructing LocalDateTime objects
+        LocalDateTime startDateTime = LocalDateTime.of(startDate, startTime);
+        LocalDateTime endDateTime = LocalDateTime.of(endDate, endTime);
+
+        // Formatting LocalDateTime objects
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
+        String formattedStartDateTime = startDateTime.format(formatter);
+        String formattedEndDateTime = endDateTime.format(formatter);
+
+        // Updating the session
+        boolean updateSuccessful = sessionController.updateSession(clientId, formattedStartDateTime, formattedEndDateTime);
+        if (updateSuccessful) {
+            actionStatus.setText("Neue Sitzung für Kunden mit ID: " + clientId + " gespeichert.");
+            clientIdField.clear();
+        } else {
+            actionStatus.setText("Die Operation konnte nicht abgeschlossen werden!");
         }
     }
+
+    private boolean isTimeValid(String time) { // using regex method
+        String regex = "([01]?[0-9]|2[0-3]):[0-5][0-9]";
+        return !time.matches(regex);
+    }
+
 
     @FXML
     public void switchToMainWindow(ActionEvent event) {
