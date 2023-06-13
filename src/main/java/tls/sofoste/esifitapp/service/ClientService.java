@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ClientService {
-    private Map<String, Client> clients = new HashMap<>();
+    private final Map<String, Client> clients = new HashMap<>();
 
     public ClientService() {
         loadClientData();
