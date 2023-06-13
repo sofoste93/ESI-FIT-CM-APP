@@ -14,7 +14,9 @@ import javafx.stage.Stage;
 import tls.sofoste.esifitapp.controller.ClientController;
 import tls.sofoste.esifitapp.model.Client;
 
+import java.awt.*;
 import java.io.IOException;
+import java.net.URI;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -64,6 +66,18 @@ public class RegisterController {
             } else {
                 actionStatus.setText("Registrierung konnte nicht ausgeführt werden!");
             }
+        }
+    }
+
+    @FXML
+    public void handleAboutMenuItem(ActionEvent actionEvent) {
+        try {
+            if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                URI uri = new URI("https://github.com/sofoste93/ESI-FIT-CM-APP");
+                Desktop.getDesktop().browse(uri);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

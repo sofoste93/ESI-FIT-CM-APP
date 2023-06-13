@@ -15,10 +15,8 @@ public class SessionController {
     }
 
     public Session endSession(String clientId) {
-        sessionService.endSession(clientId);
-        return null;
+        return sessionService.endSession(clientId);
     }
-
 
     public List<Session> getClientSessions(String clientId) {
         return sessionService.getClientSessions(clientId);

@@ -32,18 +32,18 @@ public class LogoutController {
         String clientId = clientIdField.getText().trim();
 
         if (clientId.isEmpty()) {
-            actionStatus.setText("Please enter client ID!");
+            actionStatus.setText("Bitte Kunden-ID eingeben!");
         } else {
             if (clientController.getClient(clientId) != null) {
                 Session endedSession = sessionController.endSession(clientId);
                 if (endedSession != null) {
-                    actionStatus.setText("Session ended for client with ID: " + clientId);
+                    actionStatus.setText("Session beendet für Kunden mit ID: " + clientId);
                     clientIdField.clear();
                 } else {
-                    actionStatus.setText("Failed to end session or no session found for client!");
+                    actionStatus.setText("Sitzung konnte nicht beendet werden oder Kunden nicht gefunden!");
                 }
             } else {
-                actionStatus.setText("Client with ID: " + clientId + " does not exist. Please register first.");
+                actionStatus.setText("Kunden mit ID: " + clientId + " existiert nicht.");
             }
         }
     }

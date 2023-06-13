@@ -66,7 +66,7 @@ public class ClientSessionsController {
                     @Override
                     protected void updateItem(LocalDateTime date, boolean empty) {
                         super.updateItem(date, empty);
-                        if (empty) {
+                        if (date == null || empty) {
                             setText(null);
                         } else {
                             setText(date.format(formatter));
@@ -78,7 +78,7 @@ public class ClientSessionsController {
                     @Override
                     protected void updateItem(LocalDateTime date, boolean empty) {
                         super.updateItem(date, empty);
-                        if (empty) {
+                        if (date == null || empty) {
                             setText(null);
                         } else {
                             setText(date.format(formatter));

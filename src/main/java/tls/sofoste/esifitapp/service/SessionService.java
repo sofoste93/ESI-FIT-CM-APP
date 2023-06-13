@@ -27,14 +27,17 @@ public class SessionService {
         return newSession;
     }
 
-    public void endSession(String clientId) {
+    public Session endSession(String clientId) {
         List<Session> sessions = clientSessions.get(clientId);
         if (sessions != null && !sessions.isEmpty()) {
             Session lastSession = sessions.get(sessions.size() - 1);
             lastSession.setLogoutTime(LocalDateTime.now());
 
             saveSessionData();
+
+            return lastSession;
         }
+        return null;
     }
 
     public List<Session> getClientSessions(String clientId) {
