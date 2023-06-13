@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="Code clean up">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +103,9 @@
       <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\model" />
       <recent name="C:\Users\sobfouodji\Documents\ProjectStruct\Repositories\tls\ESI-FIT-CM-APP\src\main\java\tls\sofoste\esifitapp\controller" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\MyRepositories\ESI-FIT-CM-APP" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="tls.sofoste.esifitapp" />
     </key>
@@ -143,7 +146,7 @@
       <workItem from="1685803373072" duration="19953000" />
       <workItem from="1685823582966" duration="669000" />
       <workItem from="1685884620790" duration="25195000" />
-      <workItem from="1685948845769" duration="28000000" />
+      <workItem from="1685948845769" duration="28299000" />
     </task>
     <task id="LOCAL-00001" summary="adding a FX GUI">
       <created>1685539264664</created>
@@ -250,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686587388829</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Code clean up">
+      <created>1686641865916</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686641865916</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
