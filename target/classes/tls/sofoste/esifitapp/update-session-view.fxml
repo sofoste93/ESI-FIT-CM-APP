@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="620.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.UpdateSessionController">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="Save session" />
+            <MenuItem mnemonicParsing="false" text="Save list" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#onExitBtnClick" text="Quit" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Update Session" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="View">
+            <MenuItem mnemonicParsing="false" text="View all clients" />
+            <MenuItem mnemonicParsing="false" text="View statistics" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About ESI-FIT App" onAction="#handleAboutMenuItem"/>
+        </Menu>
+    </MenuBar>
+    <AnchorPane prefHeight="395.0" prefWidth="643.0" VBox.vgrow="ALWAYS">
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="18.0" layoutY="484.0" mnemonicParsing="false" onAction="#switchToMainWindow" prefHeight="69.0" prefWidth="204.0" text="HAUPTMENU" textFill="#654d06">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="26.0" prefHeight="34.0" prefWidth="146.0" text="KUNDEN-ID EINGEBEN:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <ListView layoutX="18.0" layoutY="87.0" prefHeight="366.0" prefWidth="688.0" />
+        <Button layoutX="501.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleUpdateSession" prefHeight="69.0" prefWidth="204.0" text="SPEICHERN" textFill="#064a11">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="82.0" layoutY="249.0" prefHeight="34.0" prefWidth="103.0" text="STARTDATUM:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="82.0" layoutY="299.0" prefHeight="34.0" prefWidth="103.0" text="ENDEDATUM:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="164.0" layoutY="123.0" prefHeight="34.0" prefWidth="438.0" text="AN- UND ABMELDEZEITEN ANPASSEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="clientIdField" alignment="CENTER" layoutX="399.0" layoutY="26.0" prefHeight="34.0" prefWidth="204.0" promptText="123MAMU" />
+      <Label layoutX="401.0" layoutY="249.0" prefHeight="34.0" prefWidth="103.0" text="STARTZEIT:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="299.0" prefHeight="34.0" prefWidth="103.0" text="ENDEZEIT:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="startTimeField" accessibleRole="DATE_PICKER" alignment="CENTER" layoutX="538.0" layoutY="249.0" prefHeight="34.0" prefWidth="146.0" promptText="HH:MM" />
+      <TextField fx:id="endTimeField" accessibleRole="DATE_PICKER" alignment="CENTER" layoutX="538.0" layoutY="299.0" prefHeight="34.0" prefWidth="146.0" promptText="HH:MM" />
+      <DatePicker fx:id="startDatePicker" layoutX="204.0" layoutY="249.0" prefHeight="34.0" prefWidth="175.0" promptText="22.05.2023" />
+      <DatePicker fx:id="endDatePicker" layoutX="204.0" layoutY="299.0" prefHeight="34.0" prefWidth="175.0" promptText="22.05.2023" />
+      <Label fx:id="actionStatus" alignment="CENTER" layoutX="39.0" layoutY="376.0" prefHeight="70.0" prefWidth="646.0" text="." textFill="#076f6f">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+    </AnchorPane>
+</VBox>

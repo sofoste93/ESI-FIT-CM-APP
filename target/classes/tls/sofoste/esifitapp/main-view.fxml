@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainWindowApp" alignment="CENTER" prefHeight="675.0" prefWidth="800.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label alignment="CENTER" prefHeight="73.0" prefWidth="308.0" text="MAIN MENU / VERFÜGBARE OPTIONEN">
+      <textFill>
+         <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.20807482302188873" green="0.7799999713897705" blue="0.015599999576807022" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.14473684132099152" green="0.07065971940755844" blue="0.01005116943269968" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+      <font>
+         <Font name="Consolas Bold" size="14.0" />
+      </font>
+   </Label>
+   <AnchorPane prefHeight="492.0" prefWidth="758.0">
+
+      <Label layoutX="20.0" layoutY="14.0" prefHeight="35.0" prefWidth="208.0" text="KUNDEN REGISTRIEREN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="538.0" layoutY="12.0" prefHeight="35.0" prefWidth="174.0" text="KUNDEN EINLOGGEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="531.0" layoutY="344.0" prefHeight="35.0" prefWidth="174.0" text="KUNDEN AUSLOGGEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="14.0" layoutY="231.0" prefHeight="35.0" prefWidth="208.0" text="KUNDENSITZUNG ANZEIGEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="14.0" layoutY="118.0" prefHeight="35.0" prefWidth="208.0" text="KUNDENLISTE ANZEIGEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="531.0" layoutY="116.0" prefHeight="35.0" prefWidth="188.0" text="KUNDENDATEN ANZEIGEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="551.0" layoutY="53.0" onAction="#switchToLoginWindow" prefHeight="56.0" prefWidth="139.0" text="EINLOGGEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="551.0" layoutY="163.0" mnemonicParsing="false" onAction="#showClientInfo" prefHeight="56.0" prefWidth="139.0" text="KUNDEN INFO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="165.0" mnemonicParsing="false" onAction="#showClientList" prefHeight="56.0" prefWidth="139.0" text="KUNDENLISTE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="346.0" prefHeight="35.0" prefWidth="208.0" text="KUNDENDATEN LÖSCHEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="531.0" layoutY="229.0" prefHeight="35.0" prefWidth="188.0" text="KUNDENSITZUNG ÄNDERN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="35.0" layoutY="55.0" mnemonicParsing="false" onAction="#switchToRegisterWindow" prefHeight="56.0" prefWidth="139.0" text="REGISTRIEREN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="277.0" mnemonicParsing="false" onAction="#showSessionBtn" prefHeight="56.0" prefWidth="139.0" text="SITZUNG ANSEHEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="551.0" layoutY="275.0" mnemonicParsing="false" onAction="#updateSessionBtn" prefHeight="56.0" prefWidth="139.0" text="SITZUNG ÄNDERN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="396.0" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="56.0" prefWidth="139.0" text="KUNDE LÖSCHEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="551.0" layoutY="394.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="56.0" prefWidth="139.0" text="AUSLOGGEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="304.0" layoutY="393.0" mnemonicParsing="false" onAction="#onExitBtnClick" prefHeight="56.0" prefWidth="139.0" text="BEENDEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="293.0" layoutY="343.0" prefHeight="35.0" prefWidth="174.0" text="PROGRAMM VERLASSEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5220994475138121" centerY="0.48104265402843605" focusAngle="-120.26" focusDistance="0.06896551724137923">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5131579041481018" green="0.2627558410167694" blue="0.02850877121090889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </AnchorPane>
+</VBox>

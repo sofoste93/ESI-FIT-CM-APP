@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="Code clean up">
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="dealing with errors and exceptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clients.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sessions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sessions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ClientInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/ClientInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/UpdateSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/UpdateSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/landing-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tls/sofoste/esifitapp/landing-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/landing-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/landing-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686659225934</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="dealing with errors and exceptions">
+      <created>1686666976838</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686666976838</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,6 +358,7 @@
     <MESSAGE value="Code clean up: resizing windows" />
     <MESSAGE value="Update Readme.md" />
     <MESSAGE value="Code clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code clean up" />
+    <MESSAGE value="dealing with errors and exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="dealing with errors and exceptions" />
   </component>
 </project>

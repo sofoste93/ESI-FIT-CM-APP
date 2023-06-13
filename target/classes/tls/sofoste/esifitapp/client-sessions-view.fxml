@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainWindowApp" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tls.sofoste.esifitapp.ClientSessionsController">
+    <TextField fx:id="clientIdField" layoutX="321.0" layoutY="104.0" prefHeight="60.0" prefWidth="160.0" />
+    <Text fx:id="actionStatus" fill="#585e73" layoutX="129.0" layoutY="67.0" text="." textAlignment="CENTER" wrappingWidth="543.0">
+      <font>
+         <Font size="22.0" />
+      </font></Text>
+    <Button layoutX="512.0" layoutY="104.0" onAction="#displayClientSessions" prefHeight="60.0" prefWidth="160.0" text="SITZUNG ANZEIGEN">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+    <TableView fx:id="tableView" layoutX="129.0" layoutY="181.0" prefHeight="397.0" prefWidth="543.0">
+        <columns>
+         <TableColumn fx:id="clientIdTableColumn" prefWidth="135.0" text="KUNDEN-ID" />
+            <TableColumn fx:id="logoutTimeColumn" minWidth="0.0" prefWidth="219.0" text="ABMELDUNGSZEIT" />
+            <TableColumn fx:id="loginTimeColumn" prefWidth="188.0" text="ANMELDUNGSZEIT" />
+        </columns>
+    </TableView>
+   <Label alignment="CENTER" layoutX="129.0" layoutY="104.0" prefHeight="60.0" prefWidth="160.0" text="KUNDEN-ID:">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Button layoutX="129.0" layoutY="598.0" mnemonicParsing="false" onAction="#switchToMainWindow" prefHeight="40.0" prefWidth="160.0" text="HAUPTMENU" textFill="#340251">
+      <font>
+         <Font name="Consolas Bold" size="12.0" />
+      </font></Button>
+   <Button layoutX="321.0" layoutY="598.0" mnemonicParsing="false" onAction="#showClientList" prefHeight="40.0" prefWidth="160.0" text="KUNDENLISTE" textFill="#06042e">
+      <font>
+         <Font name="Consolas Bold" size="12.0" />
+      </font></Button>
+   <Button layoutX="512.0" layoutY="598.0" mnemonicParsing="false" onAction="#onExitBtnClick" prefHeight="40.0" prefWidth="160.0" text="VERLASSEN" textFill="#400303">
+      <font>
+         <Font name="Consolas Bold" size="12.0" />
+      </font></Button>
+
+</AnchorPane>
