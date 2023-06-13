@@ -43,10 +43,10 @@ public class ClientSessionsController {
     @FXML
     private TableColumn <Session, String> clientIdTableColumn;
 
-    private SessionController sessionController = new SessionController();
+    private final SessionController sessionController = new SessionController();
 
 
-    public void displayClientSessions(ActionEvent event) {
+    public void displayClientSessions() {
         String clientId = clientIdField.getText().trim();
 
         if (clientId.isEmpty()) {
@@ -62,7 +62,7 @@ public class ClientSessionsController {
                 loginTimeColumn.setCellValueFactory(new PropertyValueFactory<>("loginTime"));
                 logoutTimeColumn.setCellValueFactory(new PropertyValueFactory<>("logoutTime"));
 
-                loginTimeColumn.setCellFactory(column -> new TableCell<Session, LocalDateTime>() {
+                loginTimeColumn.setCellFactory(column -> new TableCell<>() {
                     @Override
                     protected void updateItem(LocalDateTime date, boolean empty) {
                         super.updateItem(date, empty);
@@ -74,7 +74,7 @@ public class ClientSessionsController {
                     }
                 });
 
-                logoutTimeColumn.setCellFactory(column -> new TableCell<Session, LocalDateTime>() {
+                logoutTimeColumn.setCellFactory(column -> new TableCell<>() {
                     @Override
                     protected void updateItem(LocalDateTime date, boolean empty) {
                         super.updateItem(date, empty);

@@ -48,9 +48,9 @@ public class ClientInfoController {
     private Label clientSessionEnd;
     private static final SessionController sessionController = new SessionController();
 
-    private ClientController clientController = new ClientController();
+    private final ClientController clientController = new ClientController();
 
-    public void displayClientInformation(ActionEvent event) {
+    public void displayClientInformation() {
         String clientId = clientIdField.getText().trim();
         List<Session> sessions = sessionController.getClientSessions(clientId);
 
@@ -98,7 +98,7 @@ public class ClientInfoController {
     }
 
     @FXML
-    public void handleAboutMenuItem(ActionEvent actionEvent) {
+    public void handleAboutMenuItem() {
         try {
             if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
                 URI uri = new URI("https://github.com/sofoste93/ESI-FIT-CM-APP");

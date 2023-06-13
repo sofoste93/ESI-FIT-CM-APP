@@ -25,8 +25,8 @@ public class LogoutController {
     @FXML
     private Label actionStatus;
 
-    private ClientController clientController = new ClientController();
-    private SessionController sessionController = new SessionController();
+    private final ClientController clientController = new ClientController();
+    private final SessionController sessionController = new SessionController();
 
     public void logoutClient(ActionEvent event) {
         String clientId = clientIdField.getText().trim();

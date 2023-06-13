@@ -26,9 +26,9 @@ public class SessionController {
 
     public boolean updateSession(String clientId, String startTime, String endTime) {
         try {
-            boolean updateSuccessful = sessionService.updateSession(clientId, LocalDateTime.parse(startTime,
-                    DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")), LocalDateTime.parse(endTime, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")));
-            return updateSuccessful;
+            return sessionService.updateSession(clientId, LocalDateTime.parse(startTime,
+                    DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")),
+                    LocalDateTime.parse(endTime, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")));
         } catch (Exception e) {
             return false;
         }

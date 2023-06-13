@@ -27,8 +27,8 @@ public class DeleteClientController {
     @FXML
     private Label actionStatus;
 
-    private ClientController clientController = new ClientController();
-    private SessionController sessionController = new SessionController();
+    private final ClientController clientController = new ClientController();
+    private final SessionController sessionController = new SessionController();
 
     @FXML
     private void handleDeleteClient() {

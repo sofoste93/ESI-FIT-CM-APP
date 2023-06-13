@@ -33,7 +33,7 @@ public class ClientListController {
     @FXML
     public VBox listWindowApp;
 
-    private ClientController clientController = new ClientController();
+    private final ClientController clientController = new ClientController();
 
     @FXML
     public void initialize() {

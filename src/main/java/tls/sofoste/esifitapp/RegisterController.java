@@ -14,9 +14,7 @@ import javafx.stage.Stage;
 import tls.sofoste.esifitapp.controller.ClientController;
 import tls.sofoste.esifitapp.model.Client;
 
-import java.awt.*;
 import java.io.IOException;
-import java.net.URI;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
