@@ -32,8 +32,8 @@ public class LoginController {
     @FXML
     public VBox mainWindowApp;
 
-    private ClientController clientController = new ClientController();
-    private SessionController sessionController = new SessionController();
+    private final ClientController clientController = new ClientController();
+    private final SessionController sessionController = new SessionController();
 
     public void loginClient() {
         String clientId = clientIdField.getText().trim();
@@ -74,7 +74,6 @@ public class LoginController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
-            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
@@ -88,7 +87,6 @@ public class LoginController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
-            stage.setFullScreen(true);
             stage.show();
 
         } catch (IOException e) {
@@ -103,7 +101,7 @@ public class LoginController {
     }
 
     @FXML
-    public void handleAboutMenuItem(ActionEvent actionEvent) {
+    public void handleAboutMenuItem() {
             try {
                 if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
                     URI uri = new URI("https://github.com/sofoste93/ESI-FIT-CM-APP");
