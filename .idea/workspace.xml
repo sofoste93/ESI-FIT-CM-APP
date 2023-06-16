@@ -9,15 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="dealing with errors and exceptions">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ESI_FIT_APP_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ESI_FIT_APP_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tls/sofoste/esifitapp/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="creating .exe file for the app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +35,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +83,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "deploy",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "F:/Project Files/Github/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp",
     "last_opened_file_path": "C:/Program Files/Java/jdk-20/bin/zip.dll",
@@ -158,7 +150,7 @@
       <workItem from="1685823582966" duration="669000" />
       <workItem from="1685884620790" duration="25195000" />
       <workItem from="1685948845769" duration="37891000" />
-      <workItem from="1686669116202" duration="3724000" />
+      <workItem from="1686669116202" duration="3945000" />
     </task>
     <task id="LOCAL-00001" summary="adding a FX GUI">
       <created>1685539264664</created>
@@ -335,7 +327,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686666976838</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="creating .exe file for the app">
+      <created>1686675380239</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1686675380239</updated>
+    </task>
+    <task id="LOCAL-00027" summary="creating .exe file for the app">
+      <created>1686675460402</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1686675460402</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +375,7 @@
     <MESSAGE value="Update Readme.md" />
     <MESSAGE value="Code clean up" />
     <MESSAGE value="dealing with errors and exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="dealing with errors and exceptions" />
+    <MESSAGE value="creating .exe file for the app" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating .exe file for the app" />
   </component>
 </project>
