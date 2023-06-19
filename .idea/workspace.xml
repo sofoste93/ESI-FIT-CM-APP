@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="creating .exe file for the app" />
+    <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="creating .exe file for the app">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +88,7 @@
     "git-widget-placeholder": "deploy",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "F:/Project Files/Github/tls/ESI-FIT-CM-APP/src/main/java/tls/sofoste/esifitapp",
-    "last_opened_file_path": "C:/Program Files/Java/jdk-20/bin/zip.dll",
+    "last_opened_file_path": "A:/TLS/LF Code/PROJECTS/ESI-FIT/Report",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -151,6 +153,7 @@
       <workItem from="1685884620790" duration="25195000" />
       <workItem from="1685948845769" duration="37891000" />
       <workItem from="1686669116202" duration="3945000" />
+      <workItem from="1687192317027" duration="2180000" />
     </task>
     <task id="LOCAL-00001" summary="adding a FX GUI">
       <created>1685539264664</created>
