@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ESI-FIT-APP" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ESI-FIT-APP" target="20" />
+      <module name="ESI-FIT-CM-APP" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
