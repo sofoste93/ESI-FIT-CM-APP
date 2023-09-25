@@ -10,35 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e5a3673-2e16-4d8f-8482-46e7005e0140" name="Changes" comment="dealing with errors and exceptions">
-      <change afterPath="$PROJECT_DIR$/src/bak.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ESI_FIT_APP_jar2/ESI-FIT-APP.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ESI_FIT_APP_jar2/clients.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ESI_FIT_APP_jar2/sessions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ClientInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ClientListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ClientSessionsController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ClientSessionsController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ClientSessionsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/DeleteClientController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ESIFITApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/ESIFITController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/LogoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/RegisterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/UpdateSessionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/ClientController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/controller/SessionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/model/Session.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/ClientService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/service/SessionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tls/sofoste/esifitapp/utils/IdGenerator.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +169,8 @@
       <workItem from="1686669116202" duration="3724000" />
       <workItem from="1687607336149" duration="2327000" />
       <workItem from="1687609779595" duration="94000" />
+      <workItem from="1687847869573" duration="398000" />
+      <workItem from="1687848456984" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="adding a FX GUI">
       <created>1685539264664</created>
