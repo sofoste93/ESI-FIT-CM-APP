@@ -4,16 +4,16 @@
 899CaTa | Cardin | Tagne
 29AnOn | Andre | Ondoa
 156ToCa | Tom | Cat
-512GuSo | Guy Bertrang | Sob
+512GuSo | GuBertrang | So
 477MaSo | Maurice | Sob
 191JaNi | James | Nils
-787JoDj | Josephine | Djuikui
-685GuSo | Guy Bertrand | Sob
-733BeBe | Berjani | Betim
+787JoDj | Josephine | Djui
+685GuSo | GuBertrand | So
+733BeBe | Berjani | Bet
 224EnDü | Enrico | Dück
-792RoKo | Romeo | Koua
-116OsKo | Oscar | Kollo
-272AnTc | Annie | Tchoutat
+792RoKo | Romeo | Koa
+116OsKo | Oscar | Koa
+272AnTc | Annie | Tchoua
 183JeMo | Jerry | Mouse
 722ArJu | Arsene | Juvas
 289IsNa | Islam | Nasif
