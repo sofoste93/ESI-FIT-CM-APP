@@ -69,6 +69,16 @@ jobs:
           else
             scripts/package.sh ${{ matrix.installer }}
           fi
+      - name: Name native installer
+        shell: bash
+        run: |
+          if [[ "${{ runner.os }}" == "Windows" ]]; then
+            mv target/dist/ESI-FIT-2.0.0.exe "target/dist/${{ matrix.asset }}.exe"
+          elif [[ "${{ runner.os }}" == "Linux" ]]; then
+            mv target/dist/*.deb "target/dist/${{ matrix.asset }}.deb"
+          else
+            mv target/dist/ESI-FIT-2.0.0.dmg "target/dist/${{ matrix.asset }}.dmg"
+          fi
       - name: Archive Windows app
         if: runner.os == 'Windows'
         shell: pwsh
