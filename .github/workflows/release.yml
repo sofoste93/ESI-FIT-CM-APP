@@ -42,6 +42,10 @@ jobs:
           distribution: temurin
           java-version: "17"
           cache: maven
+      - name: Prepare Unix launchers
+        if: runner.os != 'Windows'
+        shell: bash
+        run: chmod +x mvnw scripts/package.sh
       - name: Test
         shell: bash
         run: ./mvnw -B clean verify
