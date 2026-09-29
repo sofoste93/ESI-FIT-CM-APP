@@ -1,0 +1,42 @@
+# Maven and Java build output
+target/
+out/
+*.class
+*.jar
+*.war
+*.jmod
+hs_err_pid*
+
+# IDEs
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+*.iml
+
+# Local member data and databases
+clients.txt
+sessions.txt
+*.mv.db
+*.trace.db
+*.lock.db
+/data/
+
+# Runtime configuration and secrets
+.env
+.env.*
+!.env.example
+*.log
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Release packages
+*.exe
+*.msi
+*.deb
+*.dmg
+*.zip
+*.tar.gz

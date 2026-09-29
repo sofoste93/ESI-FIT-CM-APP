@@ -1,0 +1,116 @@
+name: Release ESI-FIT
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: ${{ matrix.asset }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            asset: ESI-FIT-Windows-x64
+            installer: exe
+            app_path: target/dist/ESI-FIT
+            executable: ESI-FIT.exe
+          - os: ubuntu-24.04
+            asset: ESI-FIT-Linux-x64
+            installer: deb
+            app_path: target/dist/ESI-FIT
+            executable: bin/ESI-FIT
+          - os: macos-15-intel
+            asset: ESI-FIT-macOS-Intel
+            installer: dmg
+            app_path: target/dist/ESI-FIT.app
+            executable: Contents/MacOS/ESI-FIT
+          - os: macos-15
+            asset: ESI-FIT-macOS-Apple-Silicon
+            installer: dmg
+            app_path: target/dist/ESI-FIT.app
+            executable: Contents/MacOS/ESI-FIT
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+      - name: Test
+        shell: bash
+        run: ./mvnw -B clean verify
+      - name: Build app image
+        shell: bash
+        run: |
+          if [[ "${{ runner.os }}" == "Windows" ]]; then
+            pwsh -File scripts/package.ps1 -PackageType app-image
+          else
+            chmod +x scripts/package.sh
+            scripts/package.sh app-image
+          fi
+      - name: Smoke test bundled runtime
+        shell: bash
+        run: '"${{ matrix.app_path }}/${{ matrix.executable }}" --diagnostics'
+      - name: Build native installer
+        shell: bash
+        run: |
+          if [[ "${{ runner.os }}" == "Windows" ]]; then
+            pwsh -File scripts/package.ps1 -PackageType ${{ matrix.installer }}
+          else
+            scripts/package.sh ${{ matrix.installer }}
+          fi
+      - name: Archive Windows app
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: Compress-Archive -Path "${{ matrix.app_path }}" -DestinationPath "target/dist/${{ matrix.asset }}-portable.zip"
+      - name: Archive Unix app
+        if: runner.os != 'Windows'
+        shell: bash
+        run: tar -C target/dist -czf "target/dist/${{ matrix.asset }}-portable.tar.gz" "$(basename '${{ matrix.app_path }}')"
+      - uses: actions/upload-artifact@v5
+        with:
+          name: ${{ matrix.asset }}
+          path: |
+            target/dist/*.exe
+            target/dist/*.deb
+            target/dist/*.dmg
+            target/dist/*-portable.zip
+            target/dist/*-portable.tar.gz
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          path: release-assets
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: "ESI-FIT 2.0.0 · Stronger Orbit"
+          body: |
+            ## The club is back in training
+
+            ESI-FIT has been rebuilt as a private, reliable fitness club command center. Every package includes its own Java runtime—no separate JRE setup is required.
+
+            ### What's new
+            - Modern dashboard with active members, live occupancy, daily visits, and average session duration
+            - Searchable member directory with plans and membership controls
+            - One-click check-in and check-out with duplicate-session protection
+            - Attendance archive and CSV export
+            - Embedded H2 database stored safely in the user's application-data folder
+            - Automatic migration from the original `clients.txt` and `sessions.txt` files
+            - Native installers plus portable builds for Windows, Linux, macOS Intel, and Apple Silicon
+
+            Choose the installer for your operating system. Portable archives are available when installation is not permitted.
+
+            **THOR // transmission complete. Training orbit stable.**
+          files: release-assets/*
+          generate_release_notes: true

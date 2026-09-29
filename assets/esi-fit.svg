@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-labelledby="title desc">
+  <title id="title">ESI-FIT Club Manager</title>
+  <desc id="desc">EF monogram in a training orbit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#070b0a"/><stop offset="1" stop-color="#111d17"/></linearGradient>
+    <linearGradient id="orbit" x1="0" y1="1" x2="1"><stop stop-color="#b7ff5d"/><stop offset="1" stop-color="#5ce1a2"/></linearGradient>
+  </defs>
+  <rect width="720" height="220" rx="30" fill="url(#bg)"/>
+  <g transform="translate(40 28)">
+    <circle cx="82" cy="82" r="64" fill="none" stroke="url(#orbit)" stroke-width="7"/>
+    <circle cx="143" cy="45" r="10" fill="#63dcff"/>
+    <text x="82" y="102" text-anchor="middle" fill="#b7ff5d" font-family="Arial,sans-serif" font-size="55" font-weight="800">EF</text>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <text x="225" y="102" fill="#f2f7f4" font-size="52" font-weight="800" letter-spacing="6">ESI-FIT</text>
+    <text x="228" y="143" fill="#b7ff5d" font-family="Consolas,monospace" font-size="15" letter-spacing="4">CLUB MISSION CONTROL</text>
+    <text x="228" y="174" fill="#64766b" font-family="Consolas,monospace" font-size="11" letter-spacing="2">ENRICO · ISLAM · STEPHANE</text>
+  </g>
+</svg>
